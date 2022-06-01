@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+}
+a {
+	cursor: pointer;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+	margin: 0.7rem 0.2rem;
+	border-bottom: 1px solid black;
+}
+.logo {
+	margin-left: 2rem;
+	display: flex;
+}
+.logo img {
+	margin-bottom: 0.4rem;
+	margin-right: 0.3rem;
+	padding-bottom: 0.4rem;
+}
+.logo a {
+	text-decoration: none;
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	float: left;
+}
+nav ul li {
+	font-size: 1.3rem;
+}
+li {
+	margin: 0.8rem;
+}
+li:last-child {
+	margin-right: 4rem;
+}
+li a {
+	text-decoration: none;
+	color: black;
+}
+.login-title {
+	text-align: center;
+	margin: 0.6rem;
+	font-size: 2rem;
+}
+.login-body {
+	height: 13rem;
+	width: 20rem;
+	border: 1px solid black;
+	margin: 4rem auto;
+	display: flex;
+	padding: 2rem;
+	flex-direction: column;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid black;
+	width: 100%;
+	text-indent: 0.6rem;
+	margin: 0.3rem;
+	height: 1.5rem;
+	outline: none;
+}
+.forgotpassword {
+	color: blue;
+	text-align: right;
+	margin: 0.5rem;
+	font-size: 0.8rem;
+}
+.login-btn {
+	width: 100%;
+	padding: 0.3rem;
+	background-color: lightblue;
+}
+.login-info {
+	font-size: 0.8rem;
+	margin: 0.5rem 0;
+}
+.login-info a {
+	font-size: 1rem;
+	text-decoration: none;
+	margin-left: 0.4rem;
+}
+
+.signup-body {
+	height: 20rem;
+
+	width: 20rem;
+	border: 1px solid black;
+	margin: 4rem auto;
+	display: flex;
+	padding: 2rem;
+	flex-direction: column;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropbtn {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 1.1rem;
+}
+.name {
+	font-size: 1.3rem;
+}
+.dropdown-content {
+	display: none;
+	margin-top: 1rem;
+
+	position: absolute;
+}
+.my-details {
+	display: flex;
+	margin: 2rem;
+}
+.reference {
+	border: 1px solid black;
+}
+.reference ul {
+	list-style: none;
+}
+
+.reference ul li {
+	font-size: 1rem;
+	cursor: pointer;
+}
+.update-details {
+	margin-left: 4rem;
+}
+.update-title {
+	text-align: center;
+}
+.update-form {
+	width: 20rem;
+}
+.personal-update {
+	margin-bottom: 2rem;
+}
+.update-btn {
+	cursor: pointer;
+	background-color: blue;
+	color: white;
+	padding: 0.4rem 0.7rem;
+}
+
+.container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 2rem;
+}
+.book {
+	min-height: 20rem;
+	min-width: 5rem;
+}
+.book-title {
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 0.5rem auto;
+}
+.book-info {
+	display: flex;
+	justify-content: space-around;
+}
+.book-price {
+	font-size: 1.2rem;
+	color: red;
+	margin: 0.4rem 0;
+}
+.book-btn {
+	padding: 0.4rem 0.8rem;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+.bookdetails {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4rem;
+}
+
+.bookinformation {
+	width: 30rem;
+	margin-right: 10rem;
+}
+.booktitle {
+	font-size: 3rem;
+}
+.authordetails {
+	display: flex;
+}
+.bookgenre {
+	margin: 0.5rem 0 1.5rem 0;
+	font-size: 1rem;
+}
+.bookauthor {
+	margin: 1rem 0;
+}
+.bookdescription {
+	font-size: 1rem;
+}
+
+.selling-information {
+	margin-top: 1rem;
+}
+.book-rent {
+	padding: 0.4rem 0.6rem;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+}
+.book-buy {
+	padding: 0.4rem 0.6rem;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+}
