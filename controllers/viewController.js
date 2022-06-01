@@ -41,3 +41,14 @@ exports.getAllBooks=async(req,res)=>{
     const books=await Book.find();
     res.status(200).render('books',{books})
 }
+exports.savedBooks=async(req,res)=>{
+   const array=res.locals.user.savedBooks;
+ const books=await Book.find()
+let saved=[]
+books.forEach(book=>{
+    if(array.includes(book._id)){
+        saved.push(book)
+    }
+})
+    res.status(200).render('saved',{books:saved})
+}

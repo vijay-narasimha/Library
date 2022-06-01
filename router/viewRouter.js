@@ -12,5 +12,5 @@ Router.get('/books',viewController.getAllBooks)
 Router.get('/book/:slug',viewController.getBook)
 Router.get('/login',viewController.login)
 Router.get('/signup',viewController.signup)
-
+Router.get("/savedbooks",viewController.savedBooks)
 module.exports=Router;

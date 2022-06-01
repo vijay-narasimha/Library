@@ -1,6 +1,6 @@
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
-
+const Book=require('../models/bookModel')
 const User = require("../models/userModel");
 
 const signToken = (id) => {
@@ -77,3 +77,29 @@ exports.isLoggedIn = async (req, res, next) => {
 	
 	return next();
 };
+
+exports.saveBook=async(req,res)=>{
+	try{
+    const bookId=req.params.id;
+	
+	
+	
+	
+    if(!res.locals.user.savedBooks.includes(bookId)){
+		
+		res.locals.user.savedBooks.push(bookId);
+	  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
+	 
+	}
+	res.status(200).json({
+		status:'success',
+
+		
+	})
+	}catch(err){
+		res.status(400).json({
+			status:'fail',
+			err
+		})
+	}
+}

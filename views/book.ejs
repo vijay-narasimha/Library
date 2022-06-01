@@ -55,15 +55,23 @@
 					<h2>Description:</h2>
 					<p class="bookdescription"><%= book.description%></p>
 				</div>
-                <div class="selling-infomation">
-                    <button class="book-rent">Rent</button>
-                    <button class="book-buy">Buy</button>
-                </div>
+				<% if(user){ %>
+				<div class="selling-infomation">
+					<button class="book-rent" data-book=<%= book._id %>
+						>
+					<% if(user.savedBooks.includes(book._id)){%>
+						saved 
+						<%}else{%>
+							save Book
+<%}%>
+						</button>
+				</div>
+	<% } %>
 			</div>
-
+			
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>
