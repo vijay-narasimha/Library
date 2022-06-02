@@ -112,3 +112,19 @@ ele.addEventListener("click", () => {
 	const book = ele.getAttribute("data-book");
 	addBook(book);
 });
+
+document.querySelector(".checkout").addEventListener('click',async()=>{
+try{
+const res=await axios({
+	method:"GET",
+	url:`/api/books/checkout/6294f8654e82d8104bae8844`,
+
+
+})
+if(res.data.status==='success'){
+	console.log('success')
+}
+}catch(err){
+	alert(err)
+}
+})
