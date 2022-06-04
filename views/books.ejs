@@ -34,10 +34,13 @@
 				</ul>
 			</nav>
 		</header>
+
+
+
         <div class="container">
             <% books.forEach(book=> { %>
 			<div class="book">
-				<div class="imgBx"><a href="#" > <img  width="250" height="300" src=img/<%= book.image%> >   </a></div>
+				<div class="imgBx"><a href="#" > <img  width="250" height="300" src=<%= book.image%> >   </a></div>
 				<div class="book-title"><%= book.name %></div>
 				<div class="book-info">
 					<div class="book-price">Rs. <%= book.price%></div>

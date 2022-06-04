@@ -1,0 +1,1729 @@
+[
+	{
+		"kind": "books#volume",
+		"id": "k8pQAAAAMAAJ",
+		"etag": "0td+yx1xBPg",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/k8pQAAAAMAAJ",
+		"volumeInfo": {
+			"title": "Data Structures and Algorithms",
+			"authors": [
+				"Alfred V. Aho",
+				"John E. Hopcroft",
+				"Jeffrey D. Ullman",
+				"John Hopcroft",
+				"Ullman D. Jeffrey"
+			],
+			"publisher": "Pearson",
+			"publishedDate": "1983",
+			"description": "Data -- Data Structures.",
+			"industryIdentifiers": [
+				{
+					"type": "OTHER",
+					"identifier": "UOM:39015026513849"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 427,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 3,
+			"ratingsCount": 2,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "0.2.2.0.preview.0",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=k8pQAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=k8pQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=k8pQAAAAMAAJ&q=datastructures&dq=datastructures&hl=&cd=1&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=k8pQAAAAMAAJ&dq=datastructures&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Data_Structures_and_Algorithms.html?hl=&id=k8pQAAAAMAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=k8pQAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Data -- Data Structures."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "ZZCJvrDe5bIC",
+		"etag": "dspxE0VbSN8",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/ZZCJvrDe5bIC",
+		"volumeInfo": {
+			"title": "Open Data Structures",
+			"subtitle": "An Introduction",
+			"authors": ["Pat Morin"],
+			"publisher": "Athabasca University Press",
+			"publishedDate": "2013",
+			"description": "This textbook teaches introductory data structures.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781927356388"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1927356385"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 344,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "0.1.1.0.preview.1",
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=ZZCJvrDe5bIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=ZZCJvrDe5bIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=ZZCJvrDe5bIC&printsec=frontcover&dq=datastructures&hl=&cd=2&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=ZZCJvrDe5bIC&dq=datastructures&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Open_Data_Structures.html?hl=&id=ZZCJvrDe5bIC"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=ZZCJvrDe5bIC&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Introduction -- Array-based lists -- Linked lists -- Skiplists -- Hash tables -- Binary trees -- Random binary search trees -- Scapegoat trees -- Red-black trees -- Heaps -- Sorting algorithms -- Graphs -- Data structures for integers -- ..."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "RQ6xDwAAQBAJ",
+		"etag": "tF4sLoue35M",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/RQ6xDwAAQBAJ",
+		"volumeInfo": {
+			"title": "Automate the Boring Stuff with Python, 2nd Edition",
+			"subtitle": "Practical Programming for Total Beginners",
+			"authors": ["Al Sweigart"],
+			"publisher": "No Starch Press",
+			"publishedDate": "2019-11-12",
+			"description": "The second edition of this best-selling Python book (over 500,000 copies sold!) uses Python 3 to teach even the technically uninclined how to write programs that do in minutes what would take hours to do by hand. There is no prior programming experience required and the book is loved by liberal arts majors and geeks alike. If you've ever spent hours renaming files or updating hundreds of spreadsheet cells, you know how tedious tasks like these can be. But what if you could have your computer do them for you? In this fully revised second edition of the best-selling classic Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand--no prior programming experience required. You'll learn the basics of Python and explore Python's rich library of modules for performing specific tasks, like scraping data off websites, reading PDF and Word documents, and automating clicking and typing tasks. The second edition of this international fan favorite includes a brand-new chapter on input validation, as well as tutorials on automating Gmail and Google Sheets, plus tips on automatically updating CSV files. You'll learn how to create programs that effortlessly perform useful feats of automation to: • Search for text in a file or across multiple files • Create, update, move, and rename files and folders • Search the Web and download online content • Update and format data in Excel spreadsheets of any size • Split, merge, watermark, and encrypt PDFs • Send email responses and text notifications • Fill out online forms Step-by-step instructions walk you through each program, and updated practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks. Don't spend your time doing work a well-trained monkey could do. Even if you've never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python, 2nd Edition.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781593279936"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1593279930"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": false
+			},
+			"pageCount": 592,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 4.5,
+			"ratingsCount": 2,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.2.2.0.preview.2",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=RQ6xDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=RQ6xDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=RQ6xDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=1&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=RQ6xDwAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=RQ6xDwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 3613.69,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 1588.49,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=RQ6xDwAAQBAJ&rdid=book-RQ6xDwAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 3613690000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 1588490000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=RQ6xDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "The second edition of this international fan favorite includes a brand-new chapter on input validation, Gmail and Google Sheets automations, tips for updating CSV files, and more."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "zjqzDAEACAAJ",
+		"etag": "79xwEer9Was",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/zjqzDAEACAAJ",
+		"volumeInfo": {
+			"title": "Python for Everybody",
+			"subtitle": "Exploring Data in Python 3",
+			"authors": ["Charles R. Severance"],
+			"publishedDate": "2016-04-09",
+			"description": "Python for Everybody is designed to introduce students to programming and software development through the lens of exploring data. You can think of the Python programming language as your tool to solve data problems that are beyond the capability of a spreadsheet.Python is an easy to use and easy to learn programming language that is freely available on Macintosh, Windows, or Linux computers. So once you learn Python you can use it for the rest of your career without needing to purchase any software.This book uses the Python 3 language. The earlier Python 2 version of this book is titled \"Python for Informatics: Exploring Information\".There are free downloadable electronic copies of this book in various formats and supporting materials for the book at www.pythonlearn.com. The course materials are available to you under a Creative Commons License so you can adapt them to teach your own Python course.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_10",
+					"identifier": "1530051126"
+				},
+				{
+					"type": "ISBN_13",
+					"identifier": "9781530051120"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 242,
+			"printType": "BOOK",
+			"averageRating": 5,
+			"ratingsCount": 1,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=zjqzDAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=zjqzDAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=zjqzDAEACAAJ&dq=python&hl=&cd=2&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=zjqzDAEACAAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Python_for_Everybody.html?hl=&id=zjqzDAEACAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=zjqzDAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "&quot;Designed to teach people to program even if they have no prior experience."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "HFeGvgEACAAJ",
+		"etag": "LJW/syu4H08",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/HFeGvgEACAAJ",
+		"volumeInfo": {
+			"title": "The Quick Python Book",
+			"authors": ["Vernon L. Ceder", "Naomi R. Ceder"],
+			"publisher": "Manning Publications Company",
+			"publishedDate": "2010",
+			"description": "Introduces the programming language's syntax, control flow, and basic data structures and covers its interaction with applications and mangement of large collections of code.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_10",
+					"identifier": "193518220X"
+				},
+				{
+					"type": "ISBN_13",
+					"identifier": "9781935182207"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 336,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 4,
+			"ratingsCount": 1,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=HFeGvgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=HFeGvgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=HFeGvgEACAAJ&dq=python&hl=&cd=3&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=HFeGvgEACAAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/The_Quick_Python_Book.html?hl=&id=HFeGvgEACAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=HFeGvgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Introduces the programming language&#39;s syntax, control flow, and basic data structures and covers its interaction with applications and mangement of large collections of code."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "iIqADwAAQBAJ",
+		"etag": "fvYk06prKvM",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/iIqADwAAQBAJ",
+		"volumeInfo": {
+			"title": "Introduction to Python Programming",
+			"authors": ["Gowrishankar S", "Veena A"],
+			"publisher": "CRC Press",
+			"publishedDate": "2018-12-07",
+			"description": "Introduction to Python Programming is written for students who are beginners in the field of computer programming. This book presents an intuitive approach to the concepts of Python Programming for students. This book differs from traditional texts not only in its philosophy but also in its overall focus, level of activities, development of topics, and attention to programming details. The contents of the book are chosen with utmost care after analyzing the syllabus for Python course prescribed by various top universities in USA, Europe, and Asia. Since the prerequisite know-how varies significantly from student to student, the book’s overall overture addresses the challenges of teaching and learning of students which is fine-tuned by the authors’ experience with large sections of students. This book uses natural language expressions instead of the traditional shortened words of the programming world. This book has been written with the goal to provide students with a textbook that can be easily understood and to make a connection between what students are learning and how they may apply that knowledge. Features of this book This book does not assume any previous programming experience, although of course, any exposure to other programming languages is useful This book introduces all of the key concepts of Python programming language with helpful illustrations Programming examples are presented in a clear and consistent manner Each line of code is numbered and explained in detail Use of f-strings throughout the book Hundreds of real-world examples are included and they come from fields such as entertainment, sports, music and environmental studies Students can periodically check their progress with in-chapter quizzes that appear in all chapters",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781351013222"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "135101322X"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 444,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 5,
+			"ratingsCount": 2,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "0.2.3.0.preview.1",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=iIqADwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=iIqADwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=iIqADwAAQBAJ&pg=PP1&dq=python&hl=&cd=4&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=iIqADwAAQBAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Introduction_to_Python_Programming.html?hl=&id=iIqADwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/Introduction_to_Python_Programming-sample-pdf.acsm?id=iIqADwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=iIqADwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Introduction to Python Programming is written for students who are beginners in the field of computer programming. This book presents an intuitive approach to the concepts of Python Programming for students."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "1FL-ygAACAAJ",
+		"etag": "rF535+dcBdM",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/1FL-ygAACAAJ",
+		"volumeInfo": {
+			"title": "A Python Book",
+			"subtitle": "Beginning Python, Advanced Python, and Python Exercises",
+			"authors": ["Dave Kuhlman"],
+			"publisher": "Platypus Global Media",
+			"publishedDate": "2011-09",
+			"description": "This document is a self learning document for a course in Python programming. This course contains (1) a part for beginners, (2) a discussion of several advanced topics that are of interest to Python programmers, and (3) a Pythonworkbook with lots of exercises.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_10",
+					"identifier": "0984221239"
+				},
+				{
+					"type": "ISBN_13",
+					"identifier": "9780984221233"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 202,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=1FL-ygAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=1FL-ygAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=1FL-ygAACAAJ&dq=python&hl=&cd=5&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=1FL-ygAACAAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/A_Python_Book.html?hl=&id=1FL-ygAACAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=1FL-ygAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "This document is a self learning document for a course in Python programming."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "H9emM_LGFDEC",
+		"etag": "OVHwFDEU6IM",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/H9emM_LGFDEC",
+		"volumeInfo": {
+			"title": "Programming in Python 3",
+			"subtitle": "A Complete Introduction to the Python Language",
+			"authors": ["Mark Summerfield"],
+			"publisher": "Addison-Wesley Professional",
+			"publishedDate": "2010",
+			"description": "Practical Python 3 for experienced developers: use the right idioms, techniques, and features to write great code * *Written from a completely 'Python 3' point of view: teaches best practices for making the most of today's newest version of Python. *Designed to help developers get productive fast... then learn how to write any program, use any library, create any library module. *Includes expert guidance on migrating Python 2 code to Python 3. Around the world, programmers appreciate Python for its simplicity, power, expressiveness, and the sheer pleasure of writing Python code. Python 3.1 is the newest and best version of the language yet: more convenient, more consistent, and easier to use. Mark Summerfield demonstrates how to write code that takes full advantage of the latest Python 3 features and idioms. Programming in Python 3, 2/e, brings together all the knowledge needed to write programs, use any library, and even create new library modules. The book teaches every aspect of the Python 3 language. It covers all the built-in functionality, as well as key components of Python's standard library. Structured so readers can write Python programs from chapter 1, each subsequent chapter provides further depth and broader coverage. Two new chapters have been added to this edition increasing the coverage to include parsing, debugging, testing, and profiling. Readers will master Python procedural and object-oriented techniques; creation of custom modules and packages; writing and reading files; multithreading; networking; database programming; GUIs; regular expressions; application debugging, testing, and profiling; and more. Detailed appendices include coverage of migrating applications from Python 2 to Python 3, plus a complete language reference. All sample code has been tested with the final version of Python 3 on Windows, Linux, and Mac OS X.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9780321680563"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "0321680561"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 630,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=H9emM_LGFDEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=H9emM_LGFDEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=H9emM_LGFDEC&printsec=frontcover&dq=python&hl=&cd=6&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=H9emM_LGFDEC&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Programming_in_Python_3.html?hl=&id=H9emM_LGFDEC"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=H9emM_LGFDEC&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Now fully updated, this edition brings together all the knowledge needed to write programs, use any library, and even create new library modules."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "LqmaDwAAQBAJ",
+		"etag": "ia0jU10KmmY",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/LqmaDwAAQBAJ",
+		"volumeInfo": {
+			"title": "Python For Dummies",
+			"authors": ["Stef Maruch", "Aahz Maruch"],
+			"publisher": "John Wiley & Sons",
+			"publishedDate": "2006-09-14",
+			"description": "Python is one of the most powerful, easy-to-read programming languages around, but it does have its limitations. This general purpose, high-level language that can be extended and embedded is a smart option for many programming problems, but a poor solution to others. Python For Dummies is the quick-and-easy guide to getting the most out of this robust program. This hands-on book will show you everything you need to know about building programs, debugging code, and simplifying development, as well as defining what actions it can perform. You’ll wrap yourself around all of its advanced features and become an expert Python user in no time. This guide gives you the tools you need to: Master basic elements and syntax Document, design, and debug programs Work with strings like a pro Direct a program with control structures Integrate integers, complex numbers, and modules Build lists, stacks, and queues Create an organized dictionary Handle functions, data, and namespace Construct applications with modules and packages Call, create, extend, and override classes Access the Internet to enhance your library Understand the new features of Python 2.5 Packed with critical idioms and great resources to maximize your productivity, Python For Dummies is the ultimate one-stop information guide. In a matter of minutes you’ll be familiar with Python’s building blocks, strings, dictionaries, and sets; and be on your way to writing the program that you’ve dreamed about!",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9780471778646"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "0471778648"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 432,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 5,
+			"ratingsCount": 1,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "0.2.0.0.preview.1",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=LqmaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=LqmaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=LqmaDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=7&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=LqmaDwAAQBAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Python_For_Dummies.html?hl=&id=LqmaDwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=LqmaDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "This guide gives you the tools you need to: Master basic elements and syntax Document, design, and debug programs Work with strings like a pro Direct a program with control structures Integrate integers, complex numbers, and modules Build ..."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "WplVzgEACAAJ",
+		"etag": "5s1qKTV8uBo",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/WplVzgEACAAJ",
+		"volumeInfo": {
+			"title": "Python Basics",
+			"subtitle": "A Practical Introduction to Python 3",
+			"authors": ["Dan Bader", "Joanna Jablonski", "Fletcher Heisler"],
+			"publisher": "Real Python (Realpython.Com)",
+			"publishedDate": "2021-03-16",
+			"description": "Make the Leap From Beginner to Intermediate in Python... Python Basics: A Practical Introduction to Python 3 Your Complete Python Curriculum-With Exercises, Interactive Quizzes, and Sample Projects What should you learn about Python in the beginning to get a strong foundation? With Python Basics, you'll not only cover the core concepts you really need to know, but you'll also learn them in the most efficient order with the help of practical exercises and interactive quizzes. You'll know enough to be dangerous with Python, fast! Who Should Read This Book If you're new to Python, you'll get a practical, step-by-step roadmap on developing your foundational skills. You'll be introduced to each concept and language feature in a logical order. Every step in this curriculum is explained and illustrated with short, clear code samples. Our goal with this book is to educate, not to impress or intimidate. If you're familiar with some basic programming concepts, you'll get a clear and well-tested introduction to Python. This is a practical introduction to Python that jumps right into the meat and potatoes without sacrificing substance. If you have prior experience with languages like VBA, PowerShell, R, Perl, C, C++, C#, Java, or Swift the numerous exercises within each chapter will fast-track your progress. If you're a seasoned developer, you'll get a Python 3 crash course that brings you up to speed with modern Python programming. Mix and match the chapters that interest you the most and use the interactive quizzes and review exercises to check your learning progress as you go along. If you're a self-starter completely new to coding, you'll get practical and motivating examples. You'll begin by installing Python and setting up a coding environment on your computer from scratch, and then continue from there. We'll get you coding right away so that you become competent and knowledgeable enough to solve real-world problems, fast. Develop a passion for programming by solving interesting problems with Python every day! If you're looking to break into a coding or data-science career, you'll pick up the practical foundations with this book. We won't just dump a boat load of theoretical information on you so you can \"sink or swim\"-instead you'll learn from hands-on, practical examples one step at a time. Each concept is broken down for you so you'll always know what you can do with it in practical terms. If you're interested in teaching others \"how to Python,\" this will be your guidebook. If you're looking to stoke the coding flame in your coworkers, kids, or relatives-use our material to teach them. All the sequencing has been done for you so you'll always know what to cover next and how to explain it. What Python Developers Say About The Book: \"Go forth and learn this amazing language using this great book.\" - Michael Kennedy, Talk Python \"The wording is casual, easy to understand, and makes the information flow well.\" - Thomas Wong, Pythonista \"I floundered for a long time trying to teach myself. I slogged through dozens of incomplete online tutorials. I snoozed through hours of boring screencasts. I gave up on countless crufty books from big-time publishers. And then I found Real Python. The easy-to-follow, step-by-step instructions break the big concepts down into bite-sized chunks written in plain English. The authors never forget their audience and are consistently thorough and detailed in their explanations. I'm up and running now, but I constantly refer to the material for guidance.\" - Jared Nielsen, Pythonista",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_10",
+					"identifier": "1775093328"
+				},
+				{
+					"type": "ISBN_13",
+					"identifier": "9781775093329"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 636,
+			"printType": "BOOK",
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=WplVzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=WplVzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=WplVzgEACAAJ&dq=python&hl=&cd=8&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=WplVzgEACAAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Python_Basics.html?hl=&id=WplVzgEACAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=WplVzgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "The first half of this book is a quick yet thorough overview of all the Python fundamentals."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "9MS9BQAAQBAJ",
+		"etag": "2+5aYZSuYQU",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/9MS9BQAAQBAJ",
+		"volumeInfo": {
+			"title": "Black Hat Python",
+			"subtitle": "Python Programming for Hackers and Pentesters",
+			"authors": ["Justin Seitz"],
+			"publisher": "No Starch Press",
+			"publishedDate": "2014-12-21",
+			"description": "When it comes to creating powerful and effective hacking tools, Python is the language of choice for most security analysts. But just how does the magic happen? In Black Hat Python, the latest from Justin Seitz (author of the best-selling Gray Hat Python), you’ll explore the darker side of Python’s capabilities—writing network sniffers, manipulating packets, infecting virtual machines, creating stealthy trojans, and more. You’ll learn how to: –Create a trojan command-and-control using GitHub –Detect sandboxing and automate com\u00admon malware tasks, like keylogging and screenshotting –Escalate Windows privileges with creative process control –Use offensive memory forensics tricks to retrieve password hashes and inject shellcode into a virtual machine –Extend the popular Burp Suite web-hacking tool –Abuse Windows COM automation to perform a man-in-the-browser attack –Exfiltrate data from a network most sneakily Insider techniques and creative challenges throughout show you how to extend the hacks and how to write your own exploits. When it comes to offensive security, your ability to create powerful tools on the fly is indispensable. Learn how in Black Hat Python. Uses Python 2",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781593275907"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1593275900"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 192,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.2.2.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=9MS9BQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=9MS9BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=9MS9BQAAQBAJ&printsec=frontcover&dq=python&hl=&cd=9&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=9MS9BQAAQBAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Black_Hat_Python.html?hl=&id=9MS9BQAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=9MS9BQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "In Black Hat Python, the latest from Justin Seitz (author of the best-selling Gray Hat Python), you’ll explore the darker side of Python’s capabilities—writing network sniffers, manipulating packets, infecting virtual machines, ..."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "UEu0CAAAQBAJ",
+		"etag": "aePhjYksxMs",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/UEu0CAAAQBAJ",
+		"volumeInfo": {
+			"title": "Automate the Boring Stuff with Python",
+			"subtitle": "Practical Programming for Total Beginners",
+			"authors": ["Al Sweigart"],
+			"publisher": "No Starch Press",
+			"publishedDate": "2015-04-14",
+			"description": "If you’ve ever spent hours renaming files or updating hundreds of spreadsheet cells, you know how tedious tasks like these can be. But what if you could have your computer do them for you? In Automate the Boring Stuff with Python, you’ll learn how to use Python to write programs that do in minutes what would take you hours to do by hand—no prior programming experience required. Once you’ve mastered the basics of programming, you’ll create Python programs that effortlessly perform useful and impressive feats of automation to: Search for text in a file or across multiple filesCreate, update, move, and rename files and foldersSearch the Web and download online contentUpdate and format data in Excel spreadsheets of any sizeSplit, merge, watermark, and encrypt PDFsSend reminder emails and text notificationsFill out online forms Step-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks. Don’t spend your time doing work a well-trained monkey could do. Even if you’ve never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python. Note: The programs in this book are written to run on Python 3.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781593275990"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1593275994"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 504,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 4.5,
+			"ratingsCount": 5,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.1.1.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=UEu0CAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=UEu0CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=UEu0CAAAQBAJ&printsec=frontcover&dq=python&hl=&cd=10&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=UEu0CAAAQBAJ&dq=python&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Automate_the_Boring_Stuff_with_Python.html?hl=&id=UEu0CAAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=UEu0CAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Even if you’ve never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python. Note: The programs in this book are written to run on Python 3."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "M2D5nnYlmZoC",
+		"etag": "Lbkupdu0cNQ",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/M2D5nnYlmZoC",
+		"volumeInfo": {
+			"title": "Python Web Development with Django",
+			"authors": ["Jeff Forcier", "Paul Bissex", "Wesley J Chun"],
+			"publisher": "Addison-Wesley Professional",
+			"publishedDate": "2008-10-24",
+			"description": "Using the simple, robust, Python-based Django framework, you can build powerful Web solutions with remarkably few lines of code. In Python Web Development with Django®, three experienced Django and Python developers cover all the techniques, tools, and concepts you need to make the most of Django 1.0, including all the major features of the new release. The authors teach Django through in-depth explanations, plus provide extensive sample code supported with images and line-by-line explanations. You’ll discover how Django leverages Python’s development speed and flexibility to help you solve a wide spectrum of Web development problems and learn Django best practices covered nowhere else. You’ll build your first Django application in just minutes and deepen your real-world skills through start-to-finish application projects including Simple Web log (blog) Online photo gallery Simple content management system Ajax-powered live blogger Online source code sharing/syntax highlighting tool How to run your Django applications on the Google App Engine This complete guide starts by introducing Python, Django, and Web development concepts, then dives into the Django framework, providing a deep understanding of its major components (models, views, templates), and how they come together to form complete Web applications. After a discussion of four independent working Django applications, coverage turns to advanced topics, such as caching, extending the template system, syndication, admin customization, and testing. Valuable reference appendices cover using the command-line, installing and configuring Django, development tools, exploring existing Django applications, the Google App Engine, and how to get more involved with the Django community. Introduction 1 Part I: Getting Started Chapter 1: Practical Python for Django 7 Chapter 2: Django for the Impatient: Building a Blog 57 Chapter 3: Starting Out 77 Part II: Django in Depth Chapter 4: Defining and Using Models 89 Chapter 5: URLs, HTTP Mechanisms, and Views 117 Chapter 6: Templates and Form Processing 135 Part III: Django Applications by Example Chapter 7: Photo Gallery 159 Chapter 8: Content Management System 181 Chapter 9: Liveblog 205 Chapter 10: Pastebin 221 Part IV: Advanced Django Techniques and Features Chapter 11: Advanced Django Programming 235 Chapter 12: Advanced Django Deployment 261 Part V: Appendices Appendix A: Command Line Basics 285 Appendix B: Installing and Running Django 295 Appendix C: Tools for Practical Django Development 313 Appendix D: Finding, Evaluating, and Using Django Applications 321 Appendix E: Django on the Google App Engine 325 Appendix F: Getting Involved in the Django Project 337 Index 339 Colophon 375",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9780132701815"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "0132701812"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 408,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 2.5,
+			"ratingsCount": 2,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.5.3.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=M2D5nnYlmZoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=M2D5nnYlmZoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=M2D5nnYlmZoC&printsec=frontcover&dq=django&hl=&cd=1&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=M2D5nnYlmZoC&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=M2D5nnYlmZoC"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 2074.01,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 2074.01,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=M2D5nnYlmZoC&rdid=book-M2D5nnYlmZoC&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 2074010000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 2074010000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=M2D5nnYlmZoC&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "You’ll build your first Django application in just minutes and deepen your real-world skills through start-to-finish application projects including Simple Web log (blog) Online photo gallery Simple content management system Ajax-powered ..."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "474tBQAAQBAJ",
+		"etag": "Ixcz7kLoQWw",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/474tBQAAQBAJ",
+		"volumeInfo": {
+			"title": "Lightweight Django",
+			"authors": ["Julia Elman", "Mark Lavin"],
+			"publisher": "\"O'Reilly Media, Inc.\"",
+			"publishedDate": "2014-11-03",
+			"description": "How can you take advantage of the Django framework to integrate complex client-side interactions and real-time features into your web applications? Through a series of rapid application development projects, this hands-on book shows experienced Django developers how to include REST APIs, WebSockets, and client-side MVC frameworks such as Backbone.js into new or existing projects. Learn how to make the most of Django’s decoupled design by choosing the components you need to build the lightweight applications you want. Once you finish this book, you’ll know how to build single-page applications that respond to interactions in real time. If you’re familiar with Python and JavaScript, you’re good to go. Learn a lightweight approach for starting a new Django project Break reusable applications into smaller services that communicate with one another Create a static, rapid prototyping site as a scaffold for websites and applications Build a REST API with django-rest-framework Learn how to use Django with the Backbone.js MVC framework Create a single-page web application on top of your REST API Integrate real-time features with WebSockets and the Tornado networking library Use the book’s code-driven examples in your own projects",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781491946305"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "149194630X"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 246,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "0.1.0.0.preview.1",
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=474tBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=474tBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=474tBQAAQBAJ&printsec=frontcover&dq=django&hl=&cd=2&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=474tBQAAQBAJ&dq=django&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Lightweight_Django.html?hl=&id=474tBQAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=474tBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Once you finish this book, you’ll know how to build single-page applications that respond to interactions in real time. If you’re familiar with Python and JavaScript, you’re good to go."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "SYUJoAEACAAJ",
+		"etag": "PoGfQFquWmY",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/SYUJoAEACAAJ",
+		"volumeInfo": {
+			"title": "Django Unleashed",
+			"authors": ["Andrew Pinkham"],
+			"publisher": "Sams",
+			"publishedDate": "2015-10-24",
+			"description": "Django is an amazingly powerful system for deploying websites and managing content of all kinds. But programming Django hasn't always been easy -- until now. Django Unleashed is your step-by-step, beginner-friendly guide to leveraging Django's core capabilities and its powerful contributed library. You'll learn the most effective way possible: by building a complete Django website, hands-on. As you do, expert Django consultant and trainer Andrew Pinkham reveals how Django works, how to write Python code that leverages Django's immense capabilities, and how to apply powerful web patterns to build solutions that are robust, reliable, and secure. You'll start simple, and learn to write Python code to solve increasingly challenging problems. Coverage includes: Creating custom template filters and tags Writing custom form validation Diving into Django's source code to troubleshoot unexpected behavior Rapidly extending site functionality with Django's contributed library Automating data input into a database Mastering powerful strategies to minimize the amount of code you need to write Implementing user authentication with Django's library Deploying your site online Splitting and refactoring your code for public reuse Avoiding security pitfalls such as SQL Injection, XSS, and clickjacking attacks And much more",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_10",
+					"identifier": "0321985079"
+				},
+				{
+					"type": "ISBN_13",
+					"identifier": "9780321985071"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": false
+			},
+			"pageCount": 750,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "preview-1.0.0",
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=SYUJoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=SYUJoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=SYUJoAEACAAJ&dq=django&hl=&cd=3&source=gbs_api",
+			"infoLink": "http://books.google.co.in/books?id=SYUJoAEACAAJ&dq=django&hl=&source=gbs_api",
+			"canonicalVolumeLink": "https://books.google.com/books/about/Django_Unleashed.html?hl=&id=SYUJoAEACAAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "NOT_FOR_SALE",
+			"isEbook": false
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "NO_PAGES",
+			"embeddable": false,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": false
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=SYUJoAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "NONE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "But programming Django hasn&#39;t always been easy -- until now.Django Unleashed is your step-by-step, beginner-friendly guide to leveraging Django&#39;s core capabilities and its powerful contributed library."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "7s7cDgAAQBAJ",
+		"etag": "EG8gZmOyLKk",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/7s7cDgAAQBAJ",
+		"volumeInfo": {
+			"title": "Mastering Django: Core",
+			"authors": ["Nigel George"],
+			"publisher": "Packt Publishing Ltd",
+			"publishedDate": "2016-12-23",
+			"description": "Delivers absolutely everything you will ever need to know to become a master Django programmer About This Book Gain a complete understanding of Django—the most popular, Python-based web framework in the world Gain the skills to successfully designing, developing, and deploying your app This book is packaged with fully described code so you can learn the fundamentals and the advanced topics to get a complete understanding of all of Django's core functions Who This Book Is For This book assumes you have a basic understanding of the Internet and programming. Experience with Python or Django would be an advantage, but is not necessary. It is ideal for beginner to intermediate programmers looking for a fast, secure, scalable, and maintainable alternative web development platform to those based on PHP, Java, and dotNET. What You Will Learn Use Django to access user-submitted form data, validate it, and work with it Get to know advanced URLconf tips and tricks Extend Django's template system with custom code Define models and use the database API to create, retrieve, update, and delete records Fully extend and customize the default implementation as per your project's needs Test and deploy your Django application Get to know more about Django's session, cache Framework, and middleware In Detail Mastering Django: Core is a completely revised and updated version of the original Django Book, written by Adrian Holovaty and Jacob Kaplan-Moss - the creators of Django. The main goal of this book is to make you a Django expert. By reading this book, you'll learn the skills needed to develop powerful websites quickly, with code that is clean and easy to maintain. This book is also a programmer's manual that provides complete coverage of the current Long Term Support (LTS) version of Django. For developers creating applications for commercial and business critical deployments, Mastering Django: Core provides a complete, up-to-date resource for Django 1.8LTS with a stable code-base, security fixes and support out to 2018. Style and approach This comprehensive step-by-step practical guide offers a thorough understanding of all the web development concepts related to Django. In addition to explaining the features of Django, this book provides real-world experience on how these features fit together to build extraordinary apps.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781787286344"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1787286347"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 694,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "0.1.1.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=7s7cDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=7s7cDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=7s7cDgAAQBAJ&pg=PP1&dq=django&hl=&cd=4&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=7s7cDgAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=7s7cDgAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 3136.43,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 3136.43,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=7s7cDgAAQBAJ&rdid=book-7s7cDgAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 3136430000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 3136430000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=7s7cDgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "The main goal of this book is to make you a Django expert. By reading this book, you&#39;ll learn the skills needed to develop powerful websites quickly, with code that is clean and easy to maintain."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "vKjWDQAAQBAJ",
+		"etag": "BHb2ctY6lLU",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/vKjWDQAAQBAJ",
+		"volumeInfo": {
+			"title": "Django: Web Development with Python",
+			"authors": ["Samuel Dauzon", "Aidas Bendoraitis", "Arun Ravindran"],
+			"publisher": "Packt Publishing Ltd",
+			"publishedDate": "2016-08-31",
+			"description": "From an idea to a prototype – a complete guide for web development with the Django framework About This Book Explore the best practices to develop applications of a superior quality with Django framework Unravel the common problems of web development in Django This course teaches you major Django functions and will help you improve your skills by developing models, forms, views, and templates Experience the challenges of working on an end-to-end social network project Who This Book Is For Web developers who want to use modern Python-based web frameworks like Django to build powerful web applications. The course is mostly self-contained and introduces web development with Python to a reader who is familiar with web development concepts and can help him become an expert in this trade. It's intended for all levels of web developers, both students and practitioners from novice to experts. What You Will Learn Use Django models to store information in the database and generate queries to access a database across models Quickly develop web pages to create, read, update, and delete data from the model using class-based views Generate very maintainable forms with Django Import data from local sources and external web services as well as exporting your data to third parties Deep dive into various aspects of Django from models and views to testing and deployment Familiarize yourself with the various nuances of web development such as browser attacks and databases In Detail Data science is hot right now, and the need for multitalented developers is greater than ever before. A basic grounding in building apps with a framework as minimalistic, powerful, and easy-to-learn as Django will be a useful skill to launch your career as an entrepreneur or web developer. Django is a web framework that was designed to strike a balance between rapid web development and high performance. This course will take you on a journey to become an efficient web developer thoroughly understanding the key concepts of Django framework. This learning path is divided into three modules. The course begins with basic concepts of the Django framework. The first module, Django Essentials, is like a practical guide, filled with many real-world examples to build highly effective Django web application. After getting familiar with core concepts of Django, it's time to practice your learning from the first module with the help of over 90 recipes available in this module. In the second module, Web Development with Django Cookbook, you'll learn varying complexities to help you create multilingual, responsive, and scalable websites with Django. By the end of this module, you will have a good understanding of the new features added to Django 1.8 and be an expert at web development processes.The next step is to discover the latest best practices and idioms in this rapidly evolving Django framework. This is what you'll be learning in our third module, Django Design Patterns and Best Practices. This module will teach you common design patterns to develop better Django code. By the end of the module, you will be able to leverage the Django framework to develop a fully functional web application with minimal effort. Style and approach This course includes all the resources that will help you jump into the web development field with Django and learn how to make scalable and robust web applications. The aim is to create a smooth learning path that will teach you how to get started with the powerful Django framework and perform various web development techniques in depth. Through this comprehensive course, you'll learn web development with Django from scratch to finish!",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781787123922"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1787123928"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 717,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.3.4.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=vKjWDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=vKjWDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=vKjWDQAAQBAJ&pg=PP1&dq=django&hl=&cd=5&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=vKjWDQAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=vKjWDQAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 5457.49,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 5457.49,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=vKjWDQAAQBAJ&rdid=book-vKjWDQAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 5457490000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 5457490000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=vKjWDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "From an idea to a prototype – a complete guide for web development with the Django framework About This Book Explore the best practices to develop applications of a superior quality with Django framework Unravel the common problems of web ..."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "0VxwDwAAQBAJ",
+		"etag": "zNOuUP/iH68",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/0VxwDwAAQBAJ",
+		"volumeInfo": {
+			"title": "Django for APIs",
+			"subtitle": "Build web APIs with Python and Django",
+			"authors": ["William S. Vincent"],
+			"publisher": "WelcomeToCode",
+			"publishedDate": "2022-02-23",
+			"description": "Completely updated for Django 4.0 & Django REST Framework 3.13! Django for APIs is a project-based guide to building modern web APIs with Django & Django REST Framework. It is suitable for beginners who have never built an API before as well as professional programmers looking for a fast-paced introduction to Django fundamentals and best practices. Over the course of 200+ pages you'll learn how to set up a new project properly, how web APIs work under the hood, and advanced testing and deployment techniques. Three separate projects are built from scratch with progressively more advanced features including a Library API, Todo API, and Blog API. User authentication, permissions, documentation, viewsets, and routers are all covered thoroughly. Django for APIs is a best-practices guide to building powerful Python-based web APIs with a minimal amount of code.",
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 201,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.17.18.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=0VxwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=0VxwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=0VxwDwAAQBAJ&pg=PP1&dq=django&hl=&cd=6&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=0VxwDwAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=0VxwDwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 3476.75,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 3476.75,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=0VxwDwAAQBAJ&rdid=book-0VxwDwAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 3476750000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 3476750000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/Django_for_APIs-sample-epub.acsm?id=0VxwDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"pdf": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/Django_for_APIs-sample-pdf.acsm?id=0VxwDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=0VxwDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "User authentication, permissions, documentation, viewsets, and routers are all covered thoroughly. Django for APIs is a best-practices guide to building powerful Python-based web APIs with a minimal amount of code."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "8sU7DwAAQBAJ",
+		"etag": "n1gh5JbUEsQ",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/8sU7DwAAQBAJ",
+		"volumeInfo": {
+			"title": "Beginning Django",
+			"subtitle": "Web Application Development and Deployment with Python",
+			"authors": ["Daniel Rubio"],
+			"publisher": "Apress",
+			"publishedDate": "2017-10-27",
+			"description": "Discover the Django web application framework and get started building Python-based web applications. This book takes you from the basics of Django all the way through to cutting-edge topics such as creating RESTful applications. Beginning Django also covers ancillary, but essential, development topics, including configuration settings, static resource management, logging, debugging, and email. Along with material on data access with SQL queries, you’ll have all you need to get up and running with Django 1.11 LTS, which is compatible with Python 2 and Python 3. Once you’ve built your web application, you’ll need to be the admin, so the next part of the book covers how to enforce permission management with users and groups. This technique allows you to restrict access to URLs and content, giving you total control of your data. In addition, you’ll work with and customize the Django admin site, which provides access to a Django project’s data. After reading and using this book, you’ll be able to build a Django application top to bottom and be ready to move on to more advanced or complex Django application development. What You'll Learn Get started with the Django framework Use Django views, class-based views, URLs, middleware, forms, templates, and Jinja templates Take advantage of Django models, including model relationships, migrations, queries, and forms Leverage the Django admin site to get access to the database used by a Django project Deploy Django REST services to serve as the data backbone for mobile, IoT, and SaaS systems Who This Book Is For Python developers new to the Django web application development framework and web developers new to Python and Django.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781484227879"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1484227875"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 593,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 4,
+			"ratingsCount": 1,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "1.1.2.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=8sU7DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=8sU7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=8sU7DwAAQBAJ&pg=PR2&dq=django&hl=&cd=7&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=8sU7DwAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=8sU7DwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 3115.2,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 3115.2,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=8sU7DwAAQBAJ&rdid=book-8sU7DwAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 3115200000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 3115200000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/Beginning_Django-sample-epub.acsm?id=8sU7DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"pdf": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/Beginning_Django-sample-pdf.acsm?id=8sU7DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=8sU7DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Discover the Django web application framework and get started building Python-based web applications. This book takes you from the basics of Django all the way through to cutting-edge topics such as creating RESTful applications."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "u9UAPzCqLbQC",
+		"etag": "q3cpzGFluiQ",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/u9UAPzCqLbQC",
+		"volumeInfo": {
+			"title": "The Definitive Guide to Django",
+			"subtitle": "Web Development Done Right",
+			"authors": ["Jacob Kaplan-Moss", "Adrian Holovaty"],
+			"publisher": "Apress",
+			"publishedDate": "2008-03-08",
+			"description": "Django, the Python-based Web development framework, is one of the hottest topics in Web development today. Its creator (and co-author of this book) Adrian Holovaty has built a compelling array of Web applications using Django, including http://chicagocrime.org. Django creator Adrian Holovaty and lead developer Jacob Kaplan-Moss have created this book as the definitive guide to the technology. Beginning with fundamentals such as installation and configuration, the book tackles sophisticated features of Django, such as outputting non-HTML content such as RSS feeds and PDFs, caching, and user management. Also includes a detailed reference to Django’s many configuration options and commands.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781430203315"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1430203315"
+				}
+			],
+			"readingModes": {
+				"text": false,
+				"image": true
+			},
+			"pageCount": 447,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": false,
+			"contentVersion": "1.2.1.0.preview.1",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=u9UAPzCqLbQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=u9UAPzCqLbQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=u9UAPzCqLbQC&printsec=frontcover&dq=django&hl=&cd=8&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=u9UAPzCqLbQC&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=u9UAPzCqLbQC"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 2950,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 2950,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=u9UAPzCqLbQC&rdid=book-u9UAPzCqLbQC&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 2950000000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 2950000000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": false
+			},
+			"pdf": {
+				"isAvailable": true,
+				"acsTokenLink": "http://books.google.co.in/books/download/The_Definitive_Guide_to_Django-sample-pdf.acsm?id=u9UAPzCqLbQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=u9UAPzCqLbQC&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Django creator Adrian Holovaty and lead developer Jacob Kaplan-Moss have created this book as the definitive guide to the technology."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "CL8tBQAAQBAJ",
+		"etag": "7n83+s6n3Fg",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/CL8tBQAAQBAJ",
+		"volumeInfo": {
+			"title": "Lightweight Django",
+			"subtitle": "Using REST, WebSockets, and Backbone",
+			"authors": ["Julia Elman", "Mark Lavin"],
+			"publisher": "\"O'Reilly Media, Inc.\"",
+			"publishedDate": "2014-11-03",
+			"description": "How can you take advantage of the Django framework to integrate complex client-side interactions and real-time features into your web applications? Through a series of rapid application development projects, this hands-on book shows experienced Django developers how to include REST APIs, WebSockets, and client-side MVC frameworks such as Backbone.js into new or existing projects. Learn how to make the most of Django’s decoupled design by choosing the components you need to build the lightweight applications you want. Once you finish this book, you’ll know how to build single-page applications that respond to interactions in real time. If you’re familiar with Python and JavaScript, you’re good to go. Learn a lightweight approach for starting a new Django project Break reusable applications into smaller services that communicate with one another Create a static, rapid prototyping site as a scaffold for websites and applications Build a REST API with django-rest-framework Learn how to use Django with the Backbone.js MVC framework Create a single-page web application on top of your REST API Integrate real-time features with WebSockets and the Tornado networking library Use the book’s code-driven examples in your own projects",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781491946299"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1491946296"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 246,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "0.2.3.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=CL8tBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=CL8tBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=CL8tBQAAQBAJ&printsec=frontcover&dq=django&hl=&cd=9&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=CL8tBQAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=CL8tBQAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 1770,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 1770,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=CL8tBQAAQBAJ&rdid=book-CL8tBQAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 1770000000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 1770000000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=CL8tBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "Once you finish this book, you’ll know how to build single-page applications that respond to interactions in real time. If you’re familiar with Python and JavaScript, you’re good to go."
+		}
+	},
+	{
+		"kind": "books#volume",
+		"id": "WzW9BwAAQBAJ",
+		"etag": "/v5KgYwgsHc",
+		"selfLink": "https://www.googleapis.com/books/v1/volumes/WzW9BwAAQBAJ",
+		"volumeInfo": {
+			"title": "Django Design Patterns and Best Practices",
+			"authors": ["Arun Ravindran"],
+			"publisher": "Packt Publishing Ltd",
+			"publishedDate": "2015-03-31",
+			"description": "If you want to learn how best to utilize commonly found patterns and learn best practices in developing applications with Django, this is the book for you. This book, like Django itself, is accessible to amateur and professional developers alike and assumes little in the way of prior experience. Although written for Python 3, the majority of the code in this book works in Python 2 or can be easily translated.",
+			"industryIdentifiers": [
+				{
+					"type": "ISBN_13",
+					"identifier": "9781783986651"
+				},
+				{
+					"type": "ISBN_10",
+					"identifier": "1783986654"
+				}
+			],
+			"readingModes": {
+				"text": true,
+				"image": true
+			},
+			"pageCount": 222,
+			"printType": "BOOK",
+			"categories": ["Computers"],
+			"averageRating": 5,
+			"ratingsCount": 1,
+			"maturityRating": "NOT_MATURE",
+			"allowAnonLogging": true,
+			"contentVersion": "2.3.3.0.preview.3",
+			"panelizationSummary": {
+				"containsEpubBubbles": false,
+				"containsImageBubbles": false
+			},
+			"imageLinks": {
+				"smallThumbnail": "http://books.google.com/books/content?id=WzW9BwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+				"thumbnail": "http://books.google.com/books/content?id=WzW9BwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+			},
+			"language": "en",
+			"previewLink": "http://books.google.co.in/books?id=WzW9BwAAQBAJ&printsec=frontcover&dq=django&hl=&cd=10&source=gbs_api",
+			"infoLink": "https://play.google.com/store/books/details?id=WzW9BwAAQBAJ&source=gbs_api",
+			"canonicalVolumeLink": "https://play.google.com/store/books/details?id=WzW9BwAAQBAJ"
+		},
+		"saleInfo": {
+			"country": "IN",
+			"saleability": "FOR_SALE",
+			"isEbook": true,
+			"listPrice": {
+				"amount": 2690.39,
+				"currencyCode": "INR"
+			},
+			"retailPrice": {
+				"amount": 2690.39,
+				"currencyCode": "INR"
+			},
+			"buyLink": "https://play.google.com/store/books/details?id=WzW9BwAAQBAJ&rdid=book-WzW9BwAAQBAJ&rdot=1&source=gbs_api",
+			"offers": [
+				{
+					"finskyOfferType": 1,
+					"listPrice": {
+						"amountInMicros": 2690390000,
+						"currencyCode": "INR"
+					},
+					"retailPrice": {
+						"amountInMicros": 2690390000,
+						"currencyCode": "INR"
+					}
+				}
+			]
+		},
+		"accessInfo": {
+			"country": "IN",
+			"viewability": "PARTIAL",
+			"embeddable": true,
+			"publicDomain": false,
+			"textToSpeechPermission": "ALLOWED",
+			"epub": {
+				"isAvailable": true
+			},
+			"pdf": {
+				"isAvailable": true
+			},
+			"webReaderLink": "http://play.google.com/books/reader?id=WzW9BwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+			"accessViewStatus": "SAMPLE",
+			"quoteSharingAllowed": false
+		},
+		"searchInfo": {
+			"textSnippet": "If you want to learn how best to utilize commonly found patterns and learn best practices in developing applications with Django, this is the book for you."
+		}
+	}
+]

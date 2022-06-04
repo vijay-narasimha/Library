@@ -2,8 +2,10 @@ const mongoose = require("mongoose");
 const slugify=require('slugify')
 const BookSchema = new mongoose.Schema({
 	name: String,
-	genre: String,
-	price: Number,
+	price: {
+		type:Number,
+		default:350
+	},
 	author: String,
 	description: String,
     image:{
@@ -11,6 +13,11 @@ const BookSchema = new mongoose.Schema({
         default:'default.jpg'
     },
 	slug:String,
+	pageCount:Number,
+	NoofBooks:{
+		type:String,
+		default:1,
+	}
 });
 
 BookSchema.pre('save',function(next){

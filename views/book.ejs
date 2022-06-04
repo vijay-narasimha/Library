@@ -39,7 +39,7 @@
 
 		<div class="bookdetails">
 			<div class="bookimage">
-				<img width="350" height="500" src=/img/<%= book.image %>>
+				<img width="350" height="500" src=<%= book.image %>>
 			</div>
 
 			<div class="bookinformation">
@@ -48,9 +48,7 @@
 					<h2>by,<span><%= book.author%></span></h2>
 				</div>
 
-				<div class="bookgenre">
-					<h2>Genre:<span><%= book.genre%></span></h2>
-				</div>
+				
 				<div>
 					<h2>Description:</h2>
 					<p class="bookdescription"><%= book.description%></p>
