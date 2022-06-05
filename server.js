@@ -9,11 +9,9 @@ const DB = process.env.DATABASE.replace("<password>", "vijay");
 mongoose
 	.connect(DB, {
 		useNewUrlParser: true,
-		
 	})
 	.then(() => {
 		app.listen(port, () => {
-            console.log(`listening at ${port}`);
-        });
+			console.log(`listening at ${port}`);
+		});
 	});
-

@@ -18,8 +18,6 @@ header {
 .logo {
 	margin-left: 2rem;
 	display: flex;
-	
-	
 }
 .logo img {
 	margin-bottom: 0.4rem;
@@ -223,40 +221,41 @@ input {
 	border-radius: 10px;
 	background-color: green;
 	color: white;
-	cursor:pointer;
+	cursor: pointer;
 }
 
-.imgBx{
+.imgBx {
 	position: relative;
 }
 
-.book-availability{
-	margin-top:-60%;
-	position:absolute;
-	color:blue;
+.book-availability {
+	margin-top: -60%;
+	position: absolute;
+	color: blue;
 }
-.cartbtn{
+.cartbtn {
 	background-color: green;
-	color:white;
+	color: white;
 	cursor: pointer;
 }
-.removecartbtn{
+.removecartbtn {
 	background-color: red;
-	color:white;
+	color: white;
 	cursor: pointer;
 }
-.carttable{
-	width:100%;
-
+.carttable {
+	width: 100%;
 }
-.takenbook{
-	color:white;
+.takenbook {
+	color: white;
 	background-color: red;
 }
-.interestbtn{
+.interestbtn {
 	cursor: pointer;
 }
 
-.removeinterestbtn{
+.removeinterestbtn,
+.updatebook,
+.deletebook {
 	cursor: pointer;
 }

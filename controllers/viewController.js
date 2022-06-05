@@ -1,4 +1,3 @@
-
 const Book = require("../models/bookModel");
 const date = require("date-and-time");
 const User = require("../models/userModel");
@@ -40,12 +39,12 @@ exports.getAllBooks = async (req, res) => {
 	res.status(200).render("books", { books });
 };
 exports.savedBooks = async (req, res) => {
-// 	const array = res.locals.user.returnedBooks || [];
-// 	const books = await Book.find();
-	
-// 	let saved = [];
-//     let times=[]
-// let end;
+	// 	const array = res.locals.user.returnedBooks || [];
+	// 	const books = await Book.find();
+
+	// 	let saved = [];
+	//     let times=[]
+	// let end;
 	// if (array.length > 0) {
 	// 	books.forEach((book) => {
 	// 		if (array.includes(book._id)) {
@@ -54,37 +53,37 @@ exports.savedBooks = async (req, res) => {
 
 	// 			if (end < start) {
 
-    //                 const time=book.endTime.getTime()
-    //                 var newdate=new Date(time)
-    //                 newdate=newdate.toDateString('DD/MM/YYYY')
-    //                times.push(newdate)
+	//                 const time=book.endTime.getTime()
+	//                 var newdate=new Date(time)
+	//                 newdate=newdate.toDateString('DD/MM/YYYY')
+	//                times.push(newdate)
 	// 				saved.push(book);
-	// 			} 
+	// 			}
 	// 		}
 	// 	});
 
 	// }
 
-let array=res.locals.user.returnedBooks || [];
+	let array = res.locals.user.returnedBooks || [];
 
-const books=await Book.find()
-let saved=[]
-books.forEach(book=>{
-	if(array.includes(book._id)){
-		saved.push(book)
-	}
-})
+	const books = await Book.find();
+	let saved = [];
+	books.forEach((book) => {
+		if (array.includes(book._id)) {
+			saved.push(book);
+		}
+	});
 
-let time=res.locals.user.endTime || []
-let times=[]
-time.forEach(t=>{
-	const timet=t.getTime();
-	var newdate=new Date(timet);
-	newdate=newdate.toDateString('DD/MM/YYYY');
-	times.push(newdate)
-})
+	let time = res.locals.user.endTime || [];
+	let times = [];
+	time.forEach((t) => {
+		const timet = t.getTime();
+		var newdate = new Date(timet);
+		newdate = newdate.toDateString("DD/MM/YYYY");
+		times.push(newdate);
+	});
 
-	res.status(200).render("saved", { books: saved ,times});
+	res.status(200).render("saved", { books: saved, times });
 };
 
 exports.cart = async (req, res) => {
@@ -107,61 +106,66 @@ exports.cart = async (req, res) => {
 exports.issuedBooks = async (req, res) => {
 	const array = res.locals.user.issuedBooks || [];
 	const books = await Book.find();
-	
+
 	let saved = [];
-    let times=[]
-let end;
+	let times = [];
+	let end;
 	if (array.length > 0) {
 		books.forEach((book) => {
 			if (array.includes(book._id)) {
-				
 				let start = date.format(new Date(), "YYYY/MM/DD HH:mm:ss");
 				end = date.format(book.endTime, "YYYY/MM/DD HH:mm:ss");
 
 				if (end > start) {
-
-                    const time=book.endTime.getTime()
-                    var newdate=new Date(time)
-                    newdate=newdate.toDateString('DD/MM/YYYY')
-                   times.push(newdate)
+					const time = book.endTime.getTime();
+					var newdate = new Date(time);
+					newdate = newdate.toDateString("DD/MM/YYYY");
+					times.push(newdate);
 					saved.push(book);
-				} 
+				}
 			}
 		});
-
 	}
 
-
-	res.status(200).render("issuedBooks", { books: saved ,times});
+	res.status(200).render("issuedBooks", { books: saved, times });
 };
 
-
-exports.interestedBooks= async (req, res) => {
+exports.interestedBooks = async (req, res) => {
 	const array = res.locals.user.interestedBooks || [];
 	const books = await Book.find();
 	let saved = [];
-	
+
 	if (array.length > 0) {
 		books.forEach((book) => {
 			if (array.includes(book._id)) {
 				saved.push(book);
-			
 			}
 		});
 	}
-	
 
 	res.status(200).render("interest", { books: saved });
 };
 
-exports.messages=async(req,res)=>{
-	const books=await Book.find()
-	let messages=[]
-	let array=res.locals.user.messages ||[]
-	books.forEach(book=>{
-if(array.includes(book._id)){
-	messages.push(book)
-}
-	})
-	res.status(200).render('messages',{books:messages})
-}
+exports.messages = async (req, res) => {
+	const books = await Book.find();
+	let messages = [];
+	let array = res.locals.user.messages || [];
+	books.forEach((book) => {
+		if (array.includes(book._id)) {
+			messages.push(book);
+		}
+	});
+	res.status(200).render("messages", { books: messages });
+};
+
+exports.bookdetails = async (req, res) => {
+	const books = await Book.find();
+	res.status(200).render("bookdetails", { books });
+};
+
+exports.userdetails = async (req, res) => {
+	const Users = await User.find();
+	let user = Users.filter((id) => id.role == "user");
+
+	res.status(200).render("userdetails", { users: user });
+};

@@ -1,6 +1,6 @@
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
-const Book=require('../models/bookModel')
+const Book = require("../models/bookModel");
 const User = require("../models/userModel");
 
 const signToken = (id) => {
@@ -56,144 +56,168 @@ exports.logout = (req, res) => {
 };
 
 exports.isLoggedIn = async (req, res, next) => {
-	 res.locals.user=null;
+	res.locals.user = null;
 	if (req.cookies.jwt) {
 		try {
-			
-			const decoded = await jwt.verify(req.cookies.jwt,process.env.JWT_SECRET)
-			
-			
+			const decoded = await jwt.verify(req.cookies.jwt, process.env.JWT_SECRET);
+
 			const currentUser = await User.findById(decoded.id);
-			
+
 			if (!currentUser) return next();
 			res.locals.user = currentUser;
-			
+
 			return next();
 		} catch (err) {
-		
 			return next();
 		}
 	}
-	
+
 	return next();
 };
 
-exports.saveBook=async(req,res)=>{
-	try{
-    const bookId=req.params.id;
-	
-	
-	
-	
-    if(!res.locals.user.savedBooks.includes(bookId)){
-		
-		res.locals.user.savedBooks.push(bookId);
-	  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
-	 
-	}
-	res.status(200).json({
-		status:'success',
+exports.saveBook = async (req, res) => {
+	try {
+		const bookId = req.params.id;
 
-		
-	})
-	}catch(err){
+		if (!res.locals.user.savedBooks.includes(bookId)) {
+			res.locals.user.savedBooks.push(bookId);
+			await User.findByIdAndUpdate(res.locals.user._id, res.locals.user, {
+				new: true,
+			});
+		}
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
 		res.status(400).json({
-			status:'fail',
-			err
-		})
+			status: "fail",
+			err,
+		});
 	}
-}
+};
 
-exports.addCart=async(req,res)=>{
-	try{
-const bookId=req.params.id;
-if(!res.locals.user.cart.includes(bookId)){
-		
-	res.locals.user.cart.push(bookId);
-  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
- 
-}
-res.status(200).json({
-	status:'success',
-
-	
-})
-	}catch(err){
+exports.addCart = async (req, res) => {
+	try {
+		const bookId = req.params.id;
+		if (!res.locals.user.cart.includes(bookId)) {
+			res.locals.user.cart.push(bookId);
+			await User.findByIdAndUpdate(res.locals.user._id, res.locals.user, {
+				new: true,
+			});
+		}
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
 		res.status(400).json({
-			status:'fail',
-			err
-		})
+			status: "fail",
+			err,
+		});
 	}
-}
+};
 
-exports.removeCart=async(req,res)=>{
-	try{
-const bookId=req.params.id;
-if(res.locals.user.cart.includes(bookId)){
-		
-	res.locals.user.cart=res.locals.user.cart.filter(book=>book!==bookId)
-	
-   await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
- 
-}
+exports.removeCart = async (req, res) => {
+	try {
+		const bookId = req.params.id;
+		if (res.locals.user.cart.includes(bookId)) {
+			res.locals.user.cart = res.locals.user.cart.filter(
+				(book) => book !== bookId,
+			);
 
-res.status(200).json({
-	status:'success',
+			await User.findByIdAndUpdate(res.locals.user._id, res.locals.user, {
+				new: true,
+			});
+		}
 
-	
-})
-	}catch(err){
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
 		res.status(400).json({
-			status:'fail',
-			err
-		})
+			status: "fail",
+			err,
+		});
 	}
-}
+};
 
-
-exports.addInterest=async(req,res)=>{
-	try{
-const bookId=req.params.id;
-if(!res.locals.user.interestedBooks.includes(bookId)){
-		
-	res.locals.user.interestedBooks.push(bookId);
-  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
- 
-}
-res.status(200).json({
-	status:'success',
-
-	
-})
-	}catch(err){
+exports.addInterest = async (req, res) => {
+	try {
+		const bookId = req.params.id;
+		if (!res.locals.user.interestedBooks.includes(bookId)) {
+			res.locals.user.interestedBooks.push(bookId);
+			await User.findByIdAndUpdate(res.locals.user._id, res.locals.user, {
+				new: true,
+			});
+		}
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
 		res.status(400).json({
-			status:'fail',
-			err
-		})
+			status: "fail",
+			err,
+		});
 	}
-}
+};
 
-exports.removeInterest=async(req,res)=>{
-	try{
-const bookId=req.params.id;
-if(res.locals.user.interestedBooks.includes(bookId)){
-		
-	res.locals.user.interestedBooks=res.locals.user.interestedBooks.filter(book=>book!==bookId)
-	
-   await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
- 
-}
+exports.removeInterest = async (req, res) => {
+	try {
+		const bookId = req.params.id;
+		if (res.locals.user.interestedBooks.includes(bookId)) {
+			res.locals.user.interestedBooks = res.locals.user.interestedBooks.filter(
+				(book) => book !== bookId,
+			);
 
-res.status(200).json({
-	status:'success',
+			await User.findByIdAndUpdate(res.locals.user._id, res.locals.user, {
+				new: true,
+			});
+		}
 
-	
-})
-	}catch(err){
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
 		res.status(400).json({
-			status:'fail',
-			err
-		})
+			status: "fail",
+			err,
+		});
 	}
-}
+};
 
+exports.cancelPass = async (req, res) => {
+	try {
+		const id = req.params.id;
+
+		const user = await User.findById(id);
+		user.passAvailable = "no";
+
+		await User.findByIdAndUpdate(id, user);
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
+		res.status(400).json({
+			status: "fail",
+			err,
+		});
+	}
+};
+
+exports.acceptPass = async (req, res) => {
+	try {
+		const id = req.params.id;
+
+		const user = await User.findById(id);
+		user.passAvailable = "yes";
+
+		await User.findByIdAndUpdate(id, user);
+		res.status(200).json({
+			status: "success",
+		});
+	} catch (err) {
+		res.status(400).json({
+			status: "fail",
+			err,
+		});
+	}
+};

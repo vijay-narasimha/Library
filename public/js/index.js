@@ -1,5 +1,3 @@
-
-
 const loginform = document.querySelector(".login");
 const signupForm = document.querySelector(".signupform");
 
@@ -48,14 +46,14 @@ const signup = async (name, email, password, phonenumber) => {
 };
 const addBook = async (book) => {
 	try {
-		console.log('checking')
+		console.log("checking");
 		const res = await axios({
 			method: "GET",
 			url: `/api/users/savebook/${book}`,
 		});
 		if (res.data.status === "success") {
 			alert("success");
-			location.reload(true)
+			location.reload(true);
 		}
 	} catch (err) {
 		alert("error");
@@ -81,183 +79,246 @@ if (signupForm) {
 		signup(name, email, password, phonenumber);
 	});
 }
-
-document.querySelector(".dropbtn").addEventListener("click", () => {
-	document.querySelector(".dropdown-content").style.display = "block";
-});
+const dropbtn = document.querySelector(".dropbtn");
+if (dropbtn) {
+	dropbtn.addEventListener("click", () => {
+		document.querySelector(".dropdown-content").style.display = "block";
+	});
+}
 window.onclick = function (e) {
 	if (!e.target.matches(".dropbtn")) {
 		const dropdownbtn = document.querySelector(".dropdown-content");
 		dropdownbtn.style.display = "none";
 	}
 };
+const logout = document.querySelector(".logout");
+if (logout) {
+	logout.addEventListener("click", async () => {
+		try {
+			const res = await axios({
+				method: "GET",
+				url: "/api/users/logout",
+			});
 
-document.querySelector(".logout").addEventListener("click", async () => {
-	try {
-		const res = await axios({
-			method: "GET",
-			url: "/api/users/logout",
-		});
-
-		if (res.data.status === "success") {
-			location.assign('/');
+			if (res.data.status === "success") {
+				location.assign("/");
+			}
+		} catch (err) {
+			alert("error");
 		}
-	} catch (err) {
-		alert("error");
-	}
-});
-
-const ele = document.querySelector(".book-rent");
-if(ele){
-document.querySelector('.book-rent').addEventListener("click", () => {
-	const book = ele.getAttribute("data-book");
-	addBook(book);
-});
+	});
 }
-
-
+const ele = document.querySelector(".book-rent");
+if (ele) {
+	document.querySelector(".book-rent").addEventListener("click", () => {
+		const book = ele.getAttribute("data-book");
+		addBook(book);
+	});
+}
 
 const cart = async (book) => {
 	try {
-		
 		const res = await axios({
 			method: "GET",
 			url: `/api/users/addcart/${book}`,
 		});
 		if (res.data.status === "success") {
 			alert("success");
-			location.reload(true)
+			location.reload(true);
 		}
 	} catch (err) {
 		alert("error");
 	}
 };
 
-
 const removecart = async (book) => {
 	try {
-		
 		const res = await axios({
 			method: "GET",
 			url: `/api/users/removecart/${book}`,
 		});
 		if (res.data.status === "success") {
 			alert("success");
-			location.reload(true)
+			location.reload(true);
 		}
 	} catch (err) {
 		alert("error");
 	}
 };
 
-const cartbtns=document.querySelectorAll('.cartbtn')
-if(cartbtns){
-	[...cartbtns].forEach(item=>{
-		item.addEventListener('click',()=>{
-		cart(item.getAttribute('data-bookId'))
-	})
-})
+const cartbtns = document.querySelectorAll(".cartbtn");
+if (cartbtns) {
+	[...cartbtns].forEach((item) => {
+		item.addEventListener("click", () => {
+			cart(item.getAttribute("data-bookId"));
+		});
+	});
 }
 
-const removecartbtns=document.querySelectorAll('.removecartbtn')
-if(removecartbtns){
-	[...removecartbtns].forEach(item=>{
-		item.addEventListener('click',()=>{
-		
-		removecart(item.getAttribute('data-bookId'))
-	})
-})
+const removecartbtns = document.querySelectorAll(".removecartbtn");
+if (removecartbtns) {
+	[...removecartbtns].forEach((item) => {
+		item.addEventListener("click", () => {
+			removecart(item.getAttribute("data-bookId"));
+		});
+	});
 }
 
-const donepayment=async(mode)=>{
+const donepayment = async (mode) => {
 	try {
-		
-	const res = await axios({
+		const res = await axios({
 			method: "GET",
 			url: `/api/books/payment/${mode}`,
 		});
-		if (res.data.status == "success") {
-			alert("success");
-		location.assign('/isssuedbooks')
-		}
+
+		alert("success");
+		location.assign("/issuedbooks");
 	} catch (err) {
-		alert('error');
+		alert("error");
 	}
+};
+
+const librarypass = document.querySelector(".librarypass");
+if (librarypass) {
+	librarypass.addEventListener("click", () => {
+		const available = document
+			.querySelector(".librarypass")
+			.getAttribute("data-available");
+		if (available) {
+			alert("success");
+			donepayment("card");
+		} else {
+			alert("you dont have an pass");
+		}
+	});
 }
 
-const librarypass=document.querySelector('.librarypass')
-if(librarypass){
-librarypass.addEventListener('click',()=>{
-	const available=document.querySelector('.librarypass').getAttribute('data-available')
-	if(available){
-		alert('success')
-		donepayment('card')
-	}else{
-		alert('you dont have an pass')
-	}
-})
+const bookpayment = document.querySelector(".bookpayment");
+if (bookpayment) {
+	bookpayment.addEventListener("click", () => {
+		donepayment("cash");
+	});
 }
 
-const bookpayment=document.querySelector('.bookpayment')
-if(bookpayment){
-bookpayment.addEventListener('click',()=>{
-	donepayment('cash')
-})
-}
-
-
-const addinterest=async(book)=>{
+const addinterest = async (book) => {
 	try {
-		
 		const res = await axios({
 			method: "GET",
 			url: `/api/users/addinterest/${book}`,
 		});
 		if (res.data.status === "success") {
 			alert("success");
-			location.reload(true)
-		}
-	} catch (err) {
-		alert("error");
-	}
-}
-
-const interest=document.querySelectorAll('.interestbtn')
-if(interest){
-	[...interest].forEach(item=>{
-	
-		item.addEventListener('click',()=>{
-			const interestbook=item.getAttribute('data-bookId');
-		addinterest(interestbook)
-		})
-})
-
-}
-
-const removeinterestbook = async (book) => {
-	try {
-		
-		const res = await axios({
-			method: "GET",
-			url: `/api/users/removeinterest/${book}`,
-		});
-		if (res.data.status === "success") {
-			alert("success");
-			location.reload(true)
+			location.reload(true);
 		}
 	} catch (err) {
 		alert("error");
 	}
 };
 
-const removeinterest=document.querySelectorAll('.removeinterestbtn')
-if(removeinterest){
-	[...removeinterest].forEach(item=>{
-	
-		item.addEventListener('click',()=>{
-			const interestbook=item.getAttribute('data-bookId');
-		removeinterestbook(interestbook)
-		})
-})
+const interest = document.querySelectorAll(".interestbtn");
+if (interest) {
+	[...interest].forEach((item) => {
+		item.addEventListener("click", () => {
+			const interestbook = item.getAttribute("data-bookId");
+			addinterest(interestbook);
+		});
+	});
+}
 
+const removeinterestbook = async (book) => {
+	try {
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/removeinterest/${book}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true);
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+const removeinterest = document.querySelectorAll(".removeinterestbtn");
+if (removeinterest) {
+	[...removeinterest].forEach((item) => {
+		item.addEventListener("click", () => {
+			const interestbook = item.getAttribute("data-bookId");
+			removeinterestbook(interestbook);
+		});
+	});
+}
+
+const passcancel = async (userid) => {
+	try {
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/cancelpass/${userid}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true);
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+const passaccept = async (userid) => {
+	try {
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/acceptpass/${userid}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true);
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+const cancelpass = document.querySelectorAll(".cancelpass");
+if (cancelpass) {
+	[...cancelpass].forEach((item) => {
+		item.addEventListener("click", () => {
+			const passid = item.getAttribute("data-userId");
+			passcancel(passid);
+		});
+	});
+}
+
+const acceptpass = document.querySelectorAll(".acceptpass");
+if (acceptpass) {
+	[...acceptpass].forEach((item) => {
+		item.addEventListener("click", () => {
+			const passid = item.getAttribute("data-userId");
+			passaccept(passid);
+		});
+	});
+}
+
+const Deletebook = async (bookid) => {
+	try {
+		const res = await axios({
+			method: "DELETE",
+			url: `/api/books/${bookid}`,
+		});
+
+		alert("success");
+		location.reload(true);
+	} catch (err) {
+		alert("error");
+	}
+};
+const deletebook = document.querySelectorAll(".deletebook");
+if (deletebook) {
+	[...deletebook].forEach((item) => {
+		item.addEventListener("click", () => {
+			const passid = item.getAttribute("data-bookId");
+			Deletebook(passid);
+		});
+	});
 }

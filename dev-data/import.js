@@ -25,12 +25,12 @@ book.forEach((books) => {
 		(bookdata.description = books.volumeInfo.description),
 		(bookdata.pageCount = books.volumeInfo.pageCount);
 	if (books.saleInfo.saleability === "FOR_SALE") {
-		bookdata.price = Math.floor( books.saleInfo.retailPrice.amount);
+		bookdata.price = Math.floor(books.saleInfo.retailPrice.amount);
 	} else {
 		bookdata.price = 350;
 	}
 	data.push(bookdata);
-})
+});
 const importData = async () => {
 	try {
 		await Book.create(data);
@@ -46,7 +46,7 @@ const deleteData = async () => {
 	try {
 		await Book.deleteMany();
 		console.log("data deleted");
-		process.exit()
+		process.exit();
 	} catch (err) {
 		console.log(err);
 	}

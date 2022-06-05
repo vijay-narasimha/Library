@@ -93,8 +93,8 @@
 			<% } %> 
 <%	if(user && user.role==='admin'){	%>	
 <div class="book-info">
-	<button>Update</button>
-	<button>Delete</button>
+	<button class="updatebook" data-bookId=<%= book._id %> >Update</button>
+	<button  class="deletebook" data-bookId=<%= book._id %> >Delete</button>
 </div>
 
 <% } %>
