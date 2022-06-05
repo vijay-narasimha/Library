@@ -20,8 +20,18 @@ const User = mongoose.Schema({
         type : String,
         required : true
     },
-    savedBooks : {
+    returnedBooks : {
         type : Array
+    },
+    issuedBooks:{
+        type:Array
+    },
+    cart:{
+        type:Array
+    },
+    passAvailable:{
+        type:String,
+        default:'yes'
     }
 // },{
 //     collection : 'Mini-project'

@@ -10,19 +10,19 @@
 	<body>
 		<header>
 			<div class="logo">
-				<img width='50' height='50' src="img/logo.png">
+                <img width='50' height='50' src="img/logo.png">
 				<a href="/"><h1>Library</h1></a>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
-						
+					
 							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
 							
 					<li>
 						<div class="dropdown">
-							<button class="dropbtn">Hello, <span class="name"><%= user.name%></span></button>
+							<button class="dropbtn">Hello <%= user.name%></button>
 							<div class="dropdown-content">
 								<a href="me">Account</a>
 								<a class="logout">Logout</a>
@@ -36,6 +36,33 @@
 				</ul>
 			</nav>
 		</header>
+
+<table class="carttable">
+    <th>
+        <td><h1>S.NO</h1></td>
+        <td><h1>Book Information</h1></td>
+        <td><h1>Book Price</h1></td>
+        <td><h1>Remove</h1></td>
+    </th>
+    <% books.forEach((book,no)=>{ %>
+<tr>
+    <td><h2><%= no+1 %></h2></td>
+    <td> <img  width="100" height="100" src=<%= book.image %> <h2><%= book.name %></h2></td>
+    
+    <td><%=book.price %></td>
+    <td>	<button  class='removecartbtn' data-bookId=<%= book._id %> >Remove</button></td>
+</tr>
+
+        <% }) %>
+</table>
+
+<div class="takenbooks">
+    <button class="bookpayment"> pay <%= cost %> for 30 days</button>
+    <button class="librarypass" data-available=<%= user.passAvailable %> >Library pass</button>
+</div>
+
+			
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
 		<script src="/js/index.js"></script>
 	</body>

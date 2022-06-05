@@ -25,7 +25,7 @@ book.forEach((books) => {
 		(bookdata.description = books.volumeInfo.description),
 		(bookdata.pageCount = books.volumeInfo.pageCount);
 	if (books.saleInfo.saleability === "FOR_SALE") {
-		bookdata.price = books.saleInfo.retailPrice.amount;
+		bookdata.price = Math.floor( books.saleInfo.retailPrice.amount);
 	} else {
 		bookdata.price = 350;
 	}
@@ -53,4 +53,4 @@ const deleteData = async () => {
 };
 
 //deleteData();
- importData();
+importData();

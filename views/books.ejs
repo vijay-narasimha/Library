@@ -17,7 +17,9 @@
 				<ul>
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
-
+							
+						<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+					
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn">Hello <%= user.name%></button>
@@ -34,25 +36,55 @@
 				</ul>
 			</nav>
 		</header>
-
+		
+	
 
 
         <div class="container">
             <% books.forEach(book=> { %>
 			<div class="book">
-				<div class="imgBx"><a href="#" > <img  width="250" height="300" src=<%= book.image%> >   </a></div>
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
+					<% if(book.NoofBooks==0){ %>
+					<div class="book-availability"><h1>Not Available</h1></div>
+				<% }  %>
+				</a></div>
+			
 				<div class="book-title"><%= book.name %></div>
 				<div class="book-info">
+					
 					<div class="book-price">Rs. <%= book.price%></div>
-					<div class="book-details"><a href=book/<%= book.slug %>><button class="book-btn"> Details</button></a></div>
-				</div>
+				
+					<% if(user){ %>
+						
+						<div>
+
+<% if(user.issuedBooks.includes(book.id)){ %>
+	<button class="takenbook">Taken</button>
+	<% }else{ %>
+							<% if(!user.cart.includes(book._id)){ %>
+							<button  class='cartbtn' data-bookId=<%= book._id %> >Add to cart</button>
+						<% }else{ %>
+							<button  class='removecartbtn' data-bookId=<%= book._id %> >Remove</button>
+
+							<% }} %>
+
+
+						</div>
+						
+				
+				
+					</div>
+			<% } %> 
+			
 			</div>
-            <% })%>
-
-
 		
+            <% }) %>
+
+
+			
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>

@@ -17,7 +17,9 @@
 				<ul>
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
-
+						<% if(user.cart===[]){ %>
+							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+							<% } %>
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn">Hello <%= user.name%></button>
@@ -34,22 +36,24 @@
 				</ul>
 			</nav>
 		</header>
-        <div class="container">
-            <% books.forEach(book=> { %>
+		<div class="container">
+            <% books.forEach((book,index)=> { %>
 			<div class="book">
-				<div class="imgBx"><a href="#" > <img  width="250" height="300" src=img/<%= book.image%> >   </a></div>
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> > </a> </div>
 				<div class="book-title"><%= book.name %></div>
 				<div class="book-info">
 					<div class="book-price">Rs. <%= book.price%></div>
-					<div class="book-details"><a href=book/<%= book.slug %>><button class="book-btn"> Details</button></a></div>
-				</div>
+				
+				<div class="bookreturneddate"><h2>Returned on <%= times[index] %></h2></div>
+				
 			</div>
-            <% })%>
-
-
-		
+           
+			</div>
+			<% })%>
+			</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>

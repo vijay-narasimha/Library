@@ -18,6 +18,8 @@ header {
 .logo {
 	margin-left: 2rem;
 	display: flex;
+	
+	
 }
 .logo img {
 	margin-bottom: 0.4rem;
@@ -224,3 +226,30 @@ input {
 	cursor:pointer;
 }
 
+.imgBx{
+	position: relative;
+}
+
+.book-availability{
+	margin-top:-60%;
+	position:absolute;
+	color:blue;
+}
+.cartbtn{
+	background-color: green;
+	color:white;
+	cursor: pointer;
+}
+.removecartbtn{
+	background-color: red;
+	color:white;
+	cursor: pointer;
+}
+.carttable{
+	width:100%;
+
+}
+.takenbook{
+	color:white;
+	background-color: red;
+}

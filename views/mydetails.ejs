@@ -17,7 +17,9 @@
 				<ul>
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
-
+						
+							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+							
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn">Hello <%= user.name%></button>
@@ -38,10 +40,10 @@
 <div class="my-details">
     <div class="reference">
         <ul>
-            <li>Recent Books</li>
-            <li><a href="/savedbooks">Saved Books</a></li>
-            <li>Owned Books</li>
-            <li>Donate Book</li>
+            <li><a href="/issuedbooks">Issued Books</a></li>
+            <li><a href="/savedbooks">Returned Books</a></li>
+            <li>Interest Books</li>
+           <li>Hold Book</li>
 
         </ul>
     </div>
@@ -53,6 +55,8 @@
                 <input type="text" value=<%= user.email %> > <input type="text" value=<%= user.phonenumber %> >
                 <button  class="update-btn" type="submit">Update</button>
             </form>
+			<h2>Pass Available:</h2>
+			<h3><%= user.passAvailable %></h3>
         </div>
         <div class="password-update">
             <h2 class="update-title">Reset Password</h2>

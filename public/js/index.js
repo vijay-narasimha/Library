@@ -100,7 +100,7 @@ document.querySelector(".logout").addEventListener("click", async () => {
 		});
 
 		if (res.data.status === "success") {
-			location.reload(true);
+			location.assign('/');
 		}
 	} catch (err) {
 		alert("error");
@@ -108,23 +108,95 @@ document.querySelector(".logout").addEventListener("click", async () => {
 });
 
 const ele = document.querySelector(".book-rent");
-ele.addEventListener("click", () => {
+if(ele){
+document.querySelector('.book-rent').addEventListener("click", () => {
 	const book = ele.getAttribute("data-book");
 	addBook(book);
 });
-
-document.querySelector(".checkout").addEventListener('click',async()=>{
-try{
-const res=await axios({
-	method:"GET",
-	url:`/api/books/checkout/6294f8654e82d8104bae8844`,
+}
 
 
+
+const cart = async (book) => {
+	try {
+		
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/addcart/${book}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true)
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+
+const removecart = async (book) => {
+	try {
+		
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/removecart/${book}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true)
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+const cartbtns=document.querySelectorAll('.cartbtn')
+if(cartbtns){
+	[...cartbtns].forEach(item=>{
+		item.addEventListener('click',()=>{
+		cart(item.getAttribute('data-bookId'))
+	})
 })
-if(res.data.status==='success'){
-	console.log('success')
 }
-}catch(err){
-	alert(err)
+
+const removecartbtns=document.querySelectorAll('.removecartbtn')
+if(removecartbtns){
+	[...removecartbtns].forEach(item=>{
+		item.addEventListener('click',()=>{
+		
+		removecart(item.getAttribute('data-bookId'))
+	})
+})
 }
+
+const donepayment=async(mode)=>{
+	try {
+		
+	const res = await axios({
+			method: "GET",
+			url: `/api/books/payment/${mode}`,
+		});
+		if (res.data.status == "success") {
+			alert("success");
+			window.setTimeout(() => {
+				location.assign("/issuedbooks");
+			});
+		}
+	} catch (err) {
+		alert('error');
+	}
+}
+
+document.querySelector('.librarypass').addEventListener('click',()=>{
+	const available=document.querySelector('.librarypass').getAttribute('data-available')
+	if(available){
+		alert('success')
+		donepayment('card')
+	}else{
+		alert('you dont have an pass')
+	}
+})
+
+document.querySelector('.bookpayment').addEventListener('click',()=>{
+	donepayment('cash')
 })

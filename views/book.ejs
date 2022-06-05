@@ -17,14 +17,15 @@
 				<ul>
 					<li><a href="/books">Books</a></li>
 					<% if(user) { %>
-
+						
+							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+					
 					<li>
+						
 						<div class="dropdown">
-							<button class="dropbtn">
-								Hello, <span class="name"><%= user.name%></span>
-							</button>
+							<button class="dropbtn">Hello <%= user.name%></button>
 							<div class="dropdown-content">
-								<a href="/me">Account</a>
+								<a href="me">Account</a>
 								<a class="logout">Logout</a>
 							</div>
 						</div>
@@ -53,18 +54,7 @@
 					<h2>Description:</h2>
 					<p class="bookdescription"><%= book.description%></p>
 				</div>
-				<% if(user){ %>
-				<div class="selling-infomation">
-					<button class="book-rent" data-book=<%= book._id %>
-						>
-					<% if(user.savedBooks.includes(book._id)){%>
-						saved 
-						<%}else{%>
-							save Book
-<%}%>
-						</button>
-				</div>
-	<% } %>
+			
 	
 			</div>
 			

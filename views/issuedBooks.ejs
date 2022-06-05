@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<div class="logo">
-				<img width='50' height='50' src="img/logo.png">
+                <img width='50' height='50' src="img/logo.png">
 				<a href="/"><h1>Library</h1></a>
 			</div>
 			<nav>
@@ -18,11 +18,11 @@
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
 						
-							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
-							
+						<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+					
 					<li>
 						<div class="dropdown">
-							<button class="dropbtn">Hello, <span class="name"><%= user.name%></span></button>
+							<button class="dropbtn">Hello <%= user.name%></button>
 							<div class="dropdown-content">
 								<a href="me">Account</a>
 								<a class="logout">Logout</a>
@@ -36,6 +36,37 @@
 				</ul>
 			</nav>
 		</header>
+
+
+
+        <div class="container">
+            <% books.forEach((book,index)=> { %>
+			<div class="book">
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
+					<% if(book.NoofBooks===0){ %>
+					<div class="book-availability"><h1>Not Available</h1></div>
+				<% }  %>
+				</a></div>
+			
+				<div class="book-title"><%= book.name %></div>
+				<div class="book-info">
+					
+					<div class="book-price">Rs. <%= book.price%></div>
+				
+				<div class="bookdue">Due on <%= times[index] %></div>
+						
+				
+				
+				
+			
+			</div>
+		
+            <% }) %>
+
+
+			
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
 		<script src="/js/index.js"></script>
 	</body>

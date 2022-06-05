@@ -103,3 +103,49 @@ exports.saveBook=async(req,res)=>{
 		})
 	}
 }
+
+exports.addCart=async(req,res)=>{
+	try{
+const bookId=req.params.id;
+if(!res.locals.user.cart.includes(bookId)){
+		
+	res.locals.user.cart.push(bookId);
+  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
+ 
+}
+res.status(200).json({
+	status:'success',
+
+	
+})
+	}catch(err){
+		res.status(400).json({
+			status:'fail',
+			err
+		})
+	}
+}
+
+exports.removeCart=async(req,res)=>{
+	try{
+const bookId=req.params.id;
+if(res.locals.user.cart.includes(bookId)){
+		
+	res.locals.user.cart=res.locals.user.cart.filter(book=>book!==bookId)
+	
+   await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
+ 
+}
+
+res.status(200).json({
+	status:'success',
+
+	
+})
+	}catch(err){
+		res.status(400).json({
+			status:'fail',
+			err
+		})
+	}
+}

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const slugify=require('slugify')
+
 const BookSchema = new mongoose.Schema({
 	name: String,
 	price: {
@@ -17,6 +18,17 @@ const BookSchema = new mongoose.Schema({
 	NoofBooks:{
 		type:String,
 		default:1,
+	},
+	takenUser:{
+		type:Array,
+	},
+	takenBy:{
+		type:Array,
+	},
+	endTime:{
+		type:Date,
+	
+		
 	}
 });
 

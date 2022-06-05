@@ -19,7 +19,9 @@
             <ul>
                 <li><a href="books">Books</a></li>
                 <% if(user) { %>
-
+                    
+						<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+				
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Hello <%= user.name%></button>
@@ -50,6 +52,6 @@
           <p class="login-info">Already have an Account?<a href="login">Login</a></p>
     </div></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
