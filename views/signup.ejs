@@ -20,13 +20,18 @@
                 <li><a href="books">Books</a></li>
                 <% if(user) { %>
                     
-						<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+                    <% if(user.role==='user'){ %>
+                        <li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+                        <% } %>
 				
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Hello <%= user.name%></button>
                         <div class="dropdown-content">
                             <a href="me">Account</a>
+                            <% if(user.role==='user'){ %>
+								<a href="/messages">Messages</a>
+								<% } %>
                             <a class="logout">Logout</a>
                         </div>
                     </div>

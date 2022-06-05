@@ -178,16 +178,16 @@ const donepayment=async(mode)=>{
 		});
 		if (res.data.status == "success") {
 			alert("success");
-			window.setTimeout(() => {
-				location.assign("/issuedbooks");
-			});
+		location.assign('/isssuedbooks')
 		}
 	} catch (err) {
 		alert('error');
 	}
 }
 
-document.querySelector('.librarypass').addEventListener('click',()=>{
+const librarypass=document.querySelector('.librarypass')
+if(librarypass){
+librarypass.addEventListener('click',()=>{
 	const available=document.querySelector('.librarypass').getAttribute('data-available')
 	if(available){
 		alert('success')
@@ -196,7 +196,68 @@ document.querySelector('.librarypass').addEventListener('click',()=>{
 		alert('you dont have an pass')
 	}
 })
+}
 
-document.querySelector('.bookpayment').addEventListener('click',()=>{
+const bookpayment=document.querySelector('.bookpayment')
+if(bookpayment){
+bookpayment.addEventListener('click',()=>{
 	donepayment('cash')
 })
+}
+
+
+const addinterest=async(book)=>{
+	try {
+		
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/addinterest/${book}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true)
+		}
+	} catch (err) {
+		alert("error");
+	}
+}
+
+const interest=document.querySelectorAll('.interestbtn')
+if(interest){
+	[...interest].forEach(item=>{
+	
+		item.addEventListener('click',()=>{
+			const interestbook=item.getAttribute('data-bookId');
+		addinterest(interestbook)
+		})
+})
+
+}
+
+const removeinterestbook = async (book) => {
+	try {
+		
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/removeinterest/${book}`,
+		});
+		if (res.data.status === "success") {
+			alert("success");
+			location.reload(true)
+		}
+	} catch (err) {
+		alert("error");
+	}
+};
+
+const removeinterest=document.querySelectorAll('.removeinterestbtn')
+if(removeinterest){
+	[...removeinterest].forEach(item=>{
+	
+		item.addEventListener('click',()=>{
+			const interestbook=item.getAttribute('data-bookId');
+		removeinterestbook(interestbook)
+		})
+})
+
+}

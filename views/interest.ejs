@@ -42,7 +42,7 @@
 			</nav>
 		</header>
 
-
+<h1>Interested Books</h1>
 
         <div class="container">
             <% books.forEach((book,index)=> { %>
@@ -58,8 +58,12 @@
 				<div class="book-info">
 					
 					<div class="book-price">Rs. <%= book.price%></div>
+
+                    <button   
+                    class="removeinterestbtn" data-bookId=<%= book._id %>
+                    >Remove</button>
 				
-				<div class="bookdue">Due on <%= times[index] %></div>
+				
 						
 				</div>
 				

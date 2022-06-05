@@ -3,9 +3,9 @@ const viewController=require('./../controllers/viewController')
 const userController=require('../controllers/userController')
 const { Route } = require('express')
 const Router=express.Router()
+const bookController=require('../controllers/bookController')
 
-
-Router.use(userController.isLoggedIn)
+Router.use(userController.isLoggedIn,bookController.saveBooks,bookController.messages)
 Router.get('/',viewController.home)
 Router.get('/me',viewController.me)
 Router.get('/books',viewController.getAllBooks)
@@ -15,4 +15,6 @@ Router.get('/signup',viewController.signup)
 Router.get('/cart',viewController.cart)
 Router.get("/savedbooks",viewController.savedBooks)
 Router.get('/issuedbooks',viewController.issuedBooks)
+Router.get('/interestedbooks',viewController.interestedBooks)
+Router.get('/messages',viewController.messages)
 module.exports=Router;

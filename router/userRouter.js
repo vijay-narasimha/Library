@@ -8,6 +8,9 @@ Router.get('/logout',userController.logout)
 
 Router.get('/savebook/:id',userController.isLoggedIn,userController.saveBook)
 Router.get('/addcart/:id',userController.isLoggedIn,userController.addCart)
+
 Router.get('/removecart/:id',userController.isLoggedIn,userController.removeCart)
+Router.get("/addinterest/:id",userController.isLoggedIn,userController.addInterest)
+Router.get('/removeinterest/:id',userController.isLoggedIn,userController.removeInterest)
 
 module.exports=Router;

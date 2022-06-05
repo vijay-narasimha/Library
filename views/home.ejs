@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Library Management System</title>
 		<link rel="stylesheet" href="style.css" />
@@ -17,14 +20,17 @@
 				<ul>
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
-						
+						<% if(user.role==='user'){ %>
 							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
-							
+							<% } %>
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn">Hello, <span class="name"><%= user.name%></span></button>
 							<div class="dropdown-content">
 								<a href="me">Account</a>
+								<% if(user.role==='user'){ %>
+								<a href="/messages">Messages</a>
+								<% } %>
 								<a class="logout">Logout</a>
 							</div>
 						</div>

@@ -149,3 +149,51 @@ res.status(200).json({
 		})
 	}
 }
+
+
+exports.addInterest=async(req,res)=>{
+	try{
+const bookId=req.params.id;
+if(!res.locals.user.interestedBooks.includes(bookId)){
+		
+	res.locals.user.interestedBooks.push(bookId);
+  await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
+ 
+}
+res.status(200).json({
+	status:'success',
+
+	
+})
+	}catch(err){
+		res.status(400).json({
+			status:'fail',
+			err
+		})
+	}
+}
+
+exports.removeInterest=async(req,res)=>{
+	try{
+const bookId=req.params.id;
+if(res.locals.user.interestedBooks.includes(bookId)){
+		
+	res.locals.user.interestedBooks=res.locals.user.interestedBooks.filter(book=>book!==bookId)
+	
+   await User.findByIdAndUpdate(res.locals.user._id,res.locals.user,{new:true})
+ 
+}
+
+res.status(200).json({
+	status:'success',
+
+	
+})
+	}catch(err){
+		res.status(400).json({
+			status:'fail',
+			err
+		})
+	}
+}
+

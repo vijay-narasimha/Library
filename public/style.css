@@ -253,3 +253,10 @@ input {
 	color:white;
 	background-color: red;
 }
+.interestbtn{
+	cursor: pointer;
+}
+
+.removeinterestbtn{
+	cursor: pointer;
+}

@@ -26,12 +26,24 @@ const User = mongoose.Schema({
     issuedBooks:{
         type:Array
     },
+    interestedBooks:{
+        type:Array
+    },
     cart:{
         type:Array
     },
     passAvailable:{
         type:String,
         default:'yes'
+    },endTime:{
+        type:Array,
+    },
+    messages:{
+        type:Array,
+    },
+    role:{
+        type:String,
+        default:'user',
     }
 // },{
 //     collection : 'Mini-project'

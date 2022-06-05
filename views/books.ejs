@@ -18,13 +18,19 @@
 					<li><a href="books">Books</a></li>
 					<% if(user) { %>
 							
-						<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+						<% if(user.role==='user'){ %>
+							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
+							<% } %>
 					
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn">Hello <%= user.name%></button>
 							<div class="dropdown-content">
 								<a href="me">Account</a>
+								
+								<% if(user.role==='user'){ %>
+									<a href="/messages">Messages</a>
+									<% } %>
 								<a class="logout">Logout</a>
 							</div>
 						</div>
@@ -51,23 +57,32 @@
 				</a></div>
 			
 				<div class="book-title"><%= book.name %></div>
-				<div class="book-info">
-					
+			
+					<% if(user && user.role==='user'){ %>
+						<div class="book-info">
 					<div class="book-price">Rs. <%= book.price%></div>
 				
-					<% if(user){ %>
+				
 						
 						<div>
 
 <% if(user.issuedBooks.includes(book.id)){ %>
 	<button class="takenbook">Taken</button>
-	<% }else{ %>
-							<% if(!user.cart.includes(book._id)){ %>
+	<% } else if(user.interestedBooks.includes(book.id)){ %>
+							<button>Hold</button>
+
+		<% }else{ %>
+								<%  if (book.NoofBooks==0){ %>
+									<button   
+									class="interestbtn" data-bookId=<%= book._id %>
+									>Interested</button>
+<% }else{ %>
+	<% if(!user.cart.includes(book._id)){ %>
 							<button  class='cartbtn' data-bookId=<%= book._id %> >Add to cart</button>
 						<% }else{ %>
 							<button  class='removecartbtn' data-bookId=<%= book._id %> >Remove</button>
 
-							<% }} %>
+							<% }}} %>
 
 
 						</div>
@@ -76,7 +91,14 @@
 				
 					</div>
 			<% } %> 
-			
+<%	if(user && user.role==='admin'){	%>	
+<div class="book-info">
+	<button>Update</button>
+	<button>Delete</button>
+</div>
+
+<% } %>
+
 			</div>
 		
             <% }) %>

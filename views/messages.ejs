@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Library Management System</title>
 		<link rel="stylesheet" href="style.css" />
@@ -10,7 +13,7 @@
 	<body>
 		<header>
 			<div class="logo">
-                <img width='50' height='50' src="img/logo.png">
+				<img width='50' height='50' src="img/logo.png">
 				<a href="/"><h1>Library</h1></a>
 			</div>
 			<nav>
@@ -21,10 +24,10 @@
 						<% if(user.role==='user'){ %>
 							<li><a href="/cart">Cart(<%=user.cart.length %>)</a></li>
 							<% } %>
-					
+							
 					<li>
 						<div class="dropdown">
-							<button class="dropbtn">Hello <%= user.name%></button>
+							<button class="dropbtn">Hello, <span class="name"><%= user.name%></span></button>
 							<div class="dropdown-content">
 								<a href="me">Account</a>
 								<% if(user.role==='user'){ %>
@@ -42,36 +45,14 @@
 			</nav>
 		</header>
 
+<% books.forEach(book=>{ %>
+<h1>  <a href=book/<%= book.slug %>><%= book.name %> Available Now </a></h1>
+<button class="removeinterestbtn"  data-bookId=<%= book._id %>>Ok</button>
+
+	<% }) %>
 
 
-        <div class="container">
-            <% books.forEach((book,index)=> { %>
-			<div class="book">
-				
-				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
-					<% if(book.NoofBooks===0){ %>
-					<div class="book-availability"><h1>Not Available</h1></div>
-				<% }  %>
-				</a></div>
-			
-				<div class="book-title"><%= book.name %></div>
-				<div class="book-info">
-					
-					<div class="book-price">Rs. <%= book.price%></div>
-				
-				<div class="bookdue">Due on <%= times[index] %></div>
-						
-				</div>
-				
-			
-			
-			</div>
-		
-         
-			<% }) %>
-		</div>
 
-			
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
 		<script src="/js/index.js"></script>
