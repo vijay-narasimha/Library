@@ -88,6 +88,7 @@ if (dropbtn) {
 window.onclick = function (e) {
 	if (!e.target.matches(".dropbtn")) {
 		const dropdownbtn = document.querySelector(".dropdown-content");
+		if(dropdownbtn)
 		dropdownbtn.style.display = "none";
 	}
 };

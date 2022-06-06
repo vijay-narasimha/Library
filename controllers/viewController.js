@@ -22,22 +22,45 @@ exports.getBook = async (req, res) => {
 	res.status(200).render("book", { book });
 };
 exports.home = async (req, res) => {
-	res.status(200).render("home");
+	let id=0;
+	
+	const books = await Book.find();
+let array=[]
+for(var index=0;index<books.length;index+=15){
+	let block=books.slice(index,index+15);
+	array.push(block)
+}
+
+	res.status(200).render("books", { books:array,id,len:array.length});
+};
+exports.pages= async (req, res) => {
+	if(req.params.id!=='favicon.ico'){
+		
+		let id=req.params.id;
+		const books = await Book.find();
+	let array=[]
+	for(var index=0;index<books.length;index+=15){
+		let block=books.slice(index,index+15);
+		array.push(block)
+	}
+	
+	
+		res.status(200).render("books", { books:array,id,len:array.length });
+	}
+
 };
 
 exports.me = async (req, res) => {
 	res.status(200).render("mydetails");
 };
 exports.login = async (req, res) => {
+	
 	res.status(200).render("login");
 };
 exports.signup = async (req, res) => {
 	res.status(200).render("signup");
 };
-exports.getAllBooks = async (req, res) => {
-	const books = await Book.find();
-	res.status(200).render("books", { books });
-};
+
 exports.savedBooks = async (req, res) => {
 	// 	const array = res.locals.user.returnedBooks || [];
 	// 	const books = await Book.find();

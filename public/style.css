@@ -259,3 +259,27 @@ input {
 .deletebook {
 	cursor: pointer;
 }
+.active-link a{
+	color:red;
+}
+.book-pages{
+	cursor: pointer;
+}
+.page-number{
+width:100%;
+}
+.page-list{
+
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	text-align: center;
+}
+html {
+	overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+	  width: 0px;
+	  background: transparent; 
+  }
