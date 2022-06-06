@@ -1,4 +1,9 @@
 <%- include('header') %>
+<% if(user.returnedBooks.length==0){ %>
+	<h1 class="empty-page">You Didn't return any Books.!!!</h1>
+	<% }else{ %>
+
+<h1 class="booksinfo">Returned  Books</h1>
 
 		<div class="container">
             <% books.forEach((book,index)=> { %>
@@ -16,4 +21,6 @@
 			</div>
 			<% })%>
 			</div>
+
+			<% } %>
 			<%- include('footer') %>

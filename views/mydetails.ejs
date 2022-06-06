@@ -27,8 +27,7 @@
                 <button  class="update-btn" type="submit">Update</button>
             </form>
 			<% if(user.role==='user') { %>
-			<h2>Pass Available:</h2>
-			<h3><%= user.passAvailable %></h3>
+			<div class="detailpass"><h2>Pass Available: <%= user.passAvailable %></h2></div>
 
 			<% } %>
         </div>

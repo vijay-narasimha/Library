@@ -25,20 +25,20 @@
 						<div>
 
 <% if(user.issuedBooks.includes(book.id)){ %>
-	<button class="takenbook">Taken</button>
+	<button class="takenbook btn">Taken</button>
 	<% } else if(user.interestedBooks.includes(book.id)){ %>
-							<button>Hold</button>
+							<button class="btn holdbtn">Hold</button>
 
 		<% }else{ %>
 								<%  if (book.NoofBooks==0){ %>
 									<button   
-									class="interestbtn" data-bookId=<%= book._id %>
+									class="btn interestbtn" data-bookId=<%= book._id %>
 									>Interested</button>
 <% }else{ %>
 	<% if(!user.cart.includes(book._id)){ %>
-							<button  class='cartbtn' data-bookId=<%= book._id %> >Add to cart</button>
+							<button  class='btn cartbtn' data-bookId=<%= book._id %> >Add to cart</button>
 						<% }else{ %>
-							<button  class='removecartbtn' data-bookId=<%= book._id %> >Remove</button>
+							<button  class='btn removecartbtn' data-bookId=<%= book._id %> >Remove</button>
 
 							<% }}} %>
 

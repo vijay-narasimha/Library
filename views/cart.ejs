@@ -1,28 +1,34 @@
 <%- include('header') %>
 
-<table class="carttable">
-    <th>
-        <td><h1>S.NO</h1></td>
-        <td><h1>Book Information</h1></td>
-        <td><h1>Book Price</h1></td>
-        <td><h1>Remove</h1></td>
-    </th>
+<% if(user.cart.length==0){ %>
+    <h1 class="empty-page">You Don't have any book in cart.Add books from Books Page.!!!</h1>
+    <% }else{ %>
+
+<table class="booktable">
+    <tr>
+        <th>S.NO</th>
+        <th>Book Image</th>
+        <th>Book name</th>
+        <th>Book Price</th>
+        <th>Remove</th>
+    </tr>
     <% books.forEach((book,no)=>{ %>
 <tr>
     <td><h2><%= no+1 %></h2></td>
-    <td> <img  width="100" height="100" src=<%= book.image %> <h2><%= book.name %></h2></td>
+    <td><img width='100' height='100' src=<%=book.image %></td>
+    <td><%= book.name %></td>
     
     <td><%=book.price %></td>
-    <td>	<button  class='removecartbtn' data-bookId=<%= book._id %> >Remove</button></td>
+    <td>	<button  class='removecartbtn btn' data-bookId=<%= book._id %> >Remove</button></td>
 </tr>
 
         <% }) %>
 </table>
 
 <div class="takenbooks">
-    <button class="bookpayment"> pay <%= cost %> for 30 days</button>
-    <button class="librarypass" data-available=<%= user.passAvailable %> >Library pass</button>
+    <button class="bookpayment btn"> pay <%= cost %> for 30 days</button>
+    <button class="librarypass btn" data-available=<%= user.passAvailable %> >Library pass</button>
 </div>
-
+<% } %>
 			
 <%- include('footer') %>

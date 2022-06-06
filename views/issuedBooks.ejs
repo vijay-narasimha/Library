@@ -1,5 +1,9 @@
 <%- include('header') %>
 
+<% if(user.issuedBooks.length==0){ %>
+	<h1 class="empty-page">You Don't have IssuedBooks.!!!</h1>
+	<% }else{ %>
+		<h1 class="booksinfo">Issued Books</h1>
         <div class="container">
             <% books.forEach((book,index)=> { %>
 			<div class="book">
@@ -26,6 +30,6 @@
          
 			<% }) %>
 		</div>
-
+<% } %>
 			
 		<%- include('footer') %>

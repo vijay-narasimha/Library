@@ -1,10 +1,15 @@
 <%- include('header') %>
 
-<% books.forEach(book=>{ %>
-<h1>  <a href=book/<%= book.slug %>><%= book.name %> Available Now </a></h1>
-<button class="removeinterestbtn"  data-bookId=<%= book._id %>>Ok</button>
+<% if(user.messages.length==0){ %>
+	<h1 class="empty-page">You Don't have any Messages.!!!</h1>
+	<%}else{%>
 
+<ul class="messagelist">
+<% books.forEach((book,index)=>{ %>
+
+<li><h1><%= index+1 %>. <a href=book/<%= book.slug %>><%= book.name %> </a> Available Now. Add the book to cart <button class="removeinterestbtn btn"  data-bookId=<%= book._id %>>Ok</button></h1></li>
 	<% }) %>
-
+</ul>
+<%}%>
 
 	<%- include('footer') %>

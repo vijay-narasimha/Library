@@ -53,11 +53,14 @@ exports.deleteBook = async (req, res) => {
 		await Book.findByIdAndDelete(req.params.id);
 		res.status(204).json({
 			status: "success",
+			data:{
+				message:"Book Deleted!"
+			}
 		});
 	} catch (err) {
 		res.status(400).json({
 			status: "fail",
-			error: err,
+			error: "deleting the book failed",
 		});
 	}
 };

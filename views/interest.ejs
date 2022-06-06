@@ -1,7 +1,10 @@
 <%- include('header') %>
+<% if(user.interestedBooks.length==1){ %>
+	<h1 class="empty-page">You Don't have any Interested Books.!!!</h1>
 
-<h1>Interested Books</h1>
-
+	<% }else{ %>
+		<h1 class="booksinfo">Interested  Books</h1>
+<%= user.interestedBooks.length %>
         <div class="container">
             <% books.forEach((book,index)=> { %>
 			<div class="book">
@@ -18,7 +21,7 @@
 					<div class="book-price">Rs. <%= book.price%></div>
 
                     <button   
-                    class="removeinterestbtn" data-bookId=<%= book._id %>
+                    class="removeinterest btn" data-bookId=<%= book._id %>
                     >Remove</button>
 				
 				
@@ -32,6 +35,6 @@
          
 			<% }) %>
 		</div>
-
+<% } %>
 			
 		<%- include('footer') %>

@@ -1,17 +1,17 @@
 <%- include('header') %>
-
+<h1 class="userinformationtitle"> User Information</h1>
 <div class="usercontainer">
 <% users.forEach(user=>{ %>
 <div class="user">
 
-<h1>Name: <%= user.name %> </h1>
-<h1>Email: <%= user.email %> </h1>
-<h1>PhoneNumber: <%= user.phonenumber %></h1>
-<h1>PassAvailability: <%=user.passAvailable %> </h1>
+<h1 class="userdata">Name: <%= user.name %> </h1>
+<h1 class="userdata">Email: <%= user.email %> </h1>
+<h1 class="userdata">PhoneNumber: <%= user.phonenumber %></h1>
+<h1 class="userdata">PassAvailability: <%=user.passAvailable %> </h1>
 <% if(user.passAvailable==='yes'){ %>
-    <button class="cancelpass" data-userId=<%= user._id %> > Cancel the pass</button>
+    <button class="cancelpass userpass" data-userId=<%= user._id %> > Cancel the pass</button>
     <%} else { %>
-        <button class="acceptpass" data-userId=<%= user._id%>>Accept the pass</button>
+        <button class="acceptpass userpass" data-userId=<%= user._id%>>Accept the pass</button>
         <% } %>
 </div>
 <% })%>

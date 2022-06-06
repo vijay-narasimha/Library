@@ -1,6 +1,19 @@
 const loginform = document.querySelector(".login");
 const signupForm = document.querySelector(".signupform");
 
+const hideAlert = () => {
+	const el = document.querySelector('.alert');
+	if (el) el.parentElement.removeChild(el);
+  };
+  
+ const showAlert = (type, msg) => {
+	hideAlert();
+	const markup = `<div class='alert alert--${type}'>${msg}</div>`;
+	document.querySelector('body').insertAdjacentHTML('afterbegin', markup);
+	window.setTimeout(hideAlert, 3000);
+  };
+  
+
 const login = async (email, password) => {
 	try {
 		const res = await axios({
@@ -12,16 +25,15 @@ const login = async (email, password) => {
 			},
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			showAlert('success',"Login Successful ")
 			window.setTimeout(() => {
 				location.assign("/");
 			});
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','Login Failed')
 	}
-};
-
+}
 const signup = async (name, email, password, phonenumber) => {
 	try {
 		const res = await axios({
@@ -35,13 +47,13 @@ const signup = async (name, email, password, phonenumber) => {
 			},
 		});
 		if (res.data.status === "success") {
-			alert("success");
+		showAlert('success','SignUp Successful')
 			window.setTimeout(() => {
 				location.assign("/");
 			});
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','SignUp failed')
 	}
 };
 const addBook = async (book) => {
@@ -52,11 +64,11 @@ const addBook = async (book) => {
 			url: `/api/users/savebook/${book}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			// showAlert('success','Book Added ')
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('failed',"Failed To add Book ")
 	}
 };
 
@@ -75,8 +87,12 @@ if (signupForm) {
 		const email = document.getElementById("email").value;
 		const password = document.getElementById("password").value;
 		const phonenumber = document.getElementById("phonenumber").value;
-		console.log(name, email, password, phonenumber);
+		const passwordconfirm=document.getElementById('passwordconfirm').value;
+		if(password===passwordconfirm){
 		signup(name, email, password, phonenumber);
+		}else{
+			showAlert('error','Password Doesnt match ')
+		}
 	});
 }
 const dropbtn = document.querySelector(".dropbtn");
@@ -102,10 +118,11 @@ if (logout) {
 			});
 
 			if (res.data.status === "success") {
+				showAlert('success','logout successful')
 				location.assign("/");
 			}
 		} catch (err) {
-			alert("error");
+			showAlert('error','logout failed')
 		}
 	});
 }
@@ -124,11 +141,11 @@ const cart = async (book) => {
 			url: `/api/users/addcart/${book}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			showAlert('success','book added to cart');
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','Failed')
 	}
 };
 
@@ -139,11 +156,11 @@ const removecart = async (book) => {
 			url: `/api/users/removecart/${book}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','Failed')
 	}
 };
 
@@ -172,10 +189,10 @@ const donepayment = async (mode) => {
 			url: `/api/books/payment/${mode}`,
 		});
 
-		alert("success");
+		showAlert('success','Book taken Successfully')
 		location.assign("/issuedbooks");
 	} catch (err) {
-		alert("error");
+		showAlert('error','Failed')
 	}
 };
 
@@ -185,11 +202,12 @@ if (librarypass) {
 		const available = document
 			.querySelector(".librarypass")
 			.getAttribute("data-available");
-		if (available) {
-			alert("success");
+			console.log(available)
+		if (available=='yes') {
+		
 			donepayment("card");
 		} else {
-			alert("you dont have an pass");
+			showAlert('error','you dont have an pass')
 		}
 	});
 }
@@ -208,11 +226,11 @@ const addinterest = async (book) => {
 			url: `/api/users/addinterest/${book}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			showAlert('success','book added')
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+	showAlert('fail','Task Failed')
 	}
 };
 
@@ -232,12 +250,16 @@ const removeinterestbook = async (book) => {
 			method: "GET",
 			url: `/api/users/removeinterest/${book}`,
 		});
+		const response=await axios({
+			method: "GET",
+			url: `/api/users/addcart/${book}`,
+		})
 		if (res.data.status === "success") {
-			alert("success");
-			location.reload(true);
+			showAlert("success",'Book added to cart')
+			location.reload('/cart');
 		}
 	} catch (err) {
-		alert("error");
+	showAlert('error','Task Failed')
 	}
 };
 
@@ -258,11 +280,11 @@ const passcancel = async (userid) => {
 			url: `/api/users/cancelpass/${userid}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			showAlert('success','Pass have been cancelled')
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','task failed')
 	}
 };
 
@@ -273,11 +295,11 @@ const passaccept = async (userid) => {
 			url: `/api/users/acceptpass/${userid}`,
 		});
 		if (res.data.status === "success") {
-			alert("success");
+			showAlert('success','Pass have been accepted')
 			location.reload(true);
 		}
 	} catch (err) {
-		alert("error");
+		showAlert('error','task failed')
 	}
 };
 
@@ -306,12 +328,12 @@ const Deletebook = async (bookid) => {
 		const res = await axios({
 			method: "DELETE",
 			url: `/api/books/${bookid}`,
-		});
+		})
 
-		alert("success");
+		showAlert('success','Book Deleted')
 		location.reload(true);
 	} catch (err) {
-		alert("error");
+		showAlert('error','Task failed')
 	}
 };
 const deletebook = document.querySelectorAll(".deletebook");
@@ -320,6 +342,34 @@ if (deletebook) {
 		item.addEventListener("click", () => {
 			const passid = item.getAttribute("data-bookId");
 			Deletebook(passid);
+		});
+	});
+}
+
+
+const deleteinterest = async (book) => {
+	try {
+		const res = await axios({
+			method: "GET",
+			url: `/api/users/removeinterest/${book}`,
+		});
+		
+		if (res.data.status === "success") {
+			showAlert("success",'removed')
+		location.reload(true)
+		}
+	} catch (err) {
+	showAlert('error','Task Failed')
+	}
+};
+
+const deletebookinterest = document.querySelectorAll(".removeinterest");
+if (deletebookinterest) {
+	[...deletebookinterest].forEach((item) => {
+		item.addEventListener("click", () => {
+			const interestbook = item.getAttribute("data-bookId");
+			console.log(interestbook)
+			deleteinterest(interestbook);
 		});
 	});
 }

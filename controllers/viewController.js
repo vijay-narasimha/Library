@@ -18,8 +18,11 @@ const User = require("../models/userModel");
 // }
 
 exports.getBook = async (req, res) => {
+	
 	const book = await Book.findOne({ slug: req.params.slug });
-	res.status(200).render("book", { book });
+	
+	res.status(200).render('book',{book});
+	
 };
 exports.home = async (req, res) => {
 	let id=0;
