@@ -1,0 +1,34 @@
+<%- include('header') %>
+
+<% if(user.cart.length==0){ %>
+    <h1 class="empty-page">You Don't have any book in cart.Add books from Books Page.!!!</h1>
+    <% }else{ %>
+
+<table class="booktable">
+    <tr>
+        <th>S.NO</th>
+        <th>Book Image</th>
+        <th>Book name</th>
+        <th>Book Price</th>
+        <th>Remove</th>
+    </tr>
+    <% books.forEach((book,no)=>{ %>
+<tr>
+    <td><h2><%= no+1 %></h2></td>
+    <td><img width='100' height='100' src=<%=book.image %></td>
+    <td><%= book.name %></td>
+    
+    <td><%=book.price %></td>
+    <td>	<button  class='removecartbtn btn' data-bookId=<%= book._id %> >Remove</button></td>
+</tr>
+
+        <% }) %>
+</table>
+
+<div class="takenbooks">
+    <button class="bookpayment btn"> pay <%= cost %> for 30 days</button>
+    <button class="librarypass btn" data-available=<%= user.passAvailable %> >Library pass</button>
+</div>
+<% } %>
+			
+<%- include('footer') %>

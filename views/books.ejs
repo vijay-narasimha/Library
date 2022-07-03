@@ -1,0 +1,78 @@
+
+		
+	
+<%- include('header') %>
+
+
+        <div class="container">
+            <% books[id].forEach(book=> { %>
+			<div class="book">
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
+					<% if(book.NoofBooks==0){ %>
+					<div class="book-availability"><h1>Not Available</h1></div>
+				<% }  %>
+				</a></div>
+			
+				<div class="book-title"><%= book.name %></div>
+			
+					<% if(user && user.role==='user'){ %>
+						<div class="book-info">
+					<div class="book-price">Rs. <%= book.price%></div>
+				
+				
+						
+						<div>
+
+<% if(user.issuedBooks.includes(book.id)){ %>
+	<button class="takenbook btn">Taken</button>
+	<% } else if(user.interestedBooks.includes(book.id)){ %>
+							<button class="btn holdbtn">Hold</button>
+
+		<% }else{ %>
+								<%  if (book.NoofBooks==0){ %>
+									<button   
+									class="btn interestbtn" data-bookId=<%= book._id %>
+									>Interested</button>
+<% }else{ %>
+	<% if(!user.cart.includes(book._id)){ %>
+							<button  class='btn cartbtn' data-bookId=<%= book._id %> >Add to cart</button>
+						<% }else{ %>
+							<button  class='btn removecartbtn' data-bookId=<%= book._id %> >Remove</button>
+
+							<% }}} %>
+
+
+						</div>
+						
+				
+				
+					</div>
+			<% } %> 
+<%	if(user && user.role==='admin'){	%>	
+<div class="book-info">
+	<button class="updatebook" data-bookId=<%= book._id %> >Update</button>
+	<button  class="deletebook" data-bookId=<%= book._id %> >Delete</button>
+</div>
+
+<% } %>
+
+			</div>
+		
+            <% }) %> 
+
+
+		</div>
+	
+<div class="page-number">
+	<ul class="page-list">
+	<% for(var index=0 ;index< len;index+=1){ %>
+<% if(index==0){ %>
+	<li><a href="/"><%= index+1 %></a></li>
+	<% }else{ %>
+		<li><a href=/<%= index %> ><%= index+1 %> </a></li>
+		<% } %>
+		<% } %>
+	</ul>
+</div> 
+		<%- include('footer') %>

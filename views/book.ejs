@@ -1,0 +1,29 @@
+<%- include('header') %>
+
+	
+			
+<div class="bookdetails">
+	
+			
+	<div class="bookimage">
+		<img width="350" height="500" src=<%= book.image %>>
+	</div>
+	
+	
+	<div class="bookinformation">
+		<p class="booktitle"><%= book.name%></p>
+		<div class="bookauthor">
+			<h2>by,<span><%= book.author%></span></h2>
+		</div>
+	
+		
+		<div>
+			<h2>Description:</h2>
+			<p class="bookdescription"><%= book.description%></p>
+		</div>
+	</div>
+			
+			
+</div>
+
+	<%- include('footer') %>

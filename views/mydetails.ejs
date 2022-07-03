@@ -1,0 +1,46 @@
+<%- include('header') %>
+<div class="my-details">
+    <div class="reference">
+		<% if(user.role==='user'){ %>
+        <ul>
+            <li><a href="/issuedbooks">Issued Books</a></li>
+            <li><a href="/savedbooks">Returned Books</a></li>
+            <li ><a href="/interestedbooks">Interested Books</a></li>
+          
+
+        </ul>
+
+		<% }else{ %>
+			<ul>
+<li><a href="/bookdetails">Book Details</a></li>
+<li><a href="/userdetails">User Details</a></li>
+
+			</ul>
+			<% } %>
+    </div>
+    <div class="update-details">
+        <div class="personal-update">
+            <h2 class="update-title">Personal Details</h2>
+            <form  class="update-form">
+                <input type="text" value=<%= user.name %> >
+                <input type="text" value=<%= user.email %> > <input type="text" value=<%= user.phonenumber %> >
+                <button  class="update-btn" type="submit">Update</button>
+            </form>
+			<% if(user.role==='user') { %>
+			<div class="detailpass"><h2>Pass Available: <%= user.passAvailable %></h2></div>
+
+			<% } %>
+        </div>
+        <div class="password-update">
+            <h2 class="update-title">Reset Password</h2>
+            <form class="update-form">
+                <input type="password" placeholder="Enter password" required>
+                <input type="password" placeholder="Enter confirm Password" required>
+                <button class="update-btn" type="submit">Reset</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('footer') %>

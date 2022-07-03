@@ -1,0 +1,569 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+}
+a {
+	cursor: pointer;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+	margin: 0.7rem 0.2rem;
+	border-bottom: 1px solid black;
+}
+.logo {
+	margin-left: 2rem;
+	display: flex;
+}
+.logo img {
+	margin-bottom: 0.4rem;
+	margin-right: 0.3rem;
+	padding-bottom: 0.4rem;
+}
+nav{
+	margin-right:2rem;
+}
+.logo a {
+	text-decoration: none;
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	float: left;
+}
+nav ul li {
+	font-size: 1.3rem;
+}
+li {
+	margin: 0.8rem;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+}
+.login-title {
+	text-align: center;
+	margin: 0.6rem;
+	font-size: 2rem;
+}
+.login-body {
+	height: 13rem;
+	width: 20rem;
+	border: 1px solid black;
+	margin: 4rem auto;
+	display: flex;
+	padding: 2rem;
+	flex-direction: column;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid black;
+	width: 100%;
+	text-indent: 0.6rem;
+	margin: 0.3rem;
+	height: 1.5rem;
+	outline: none;
+}
+.forgotpassword {
+	color: blue;
+	text-align: right;
+	margin: 0.5rem;
+	font-size: 0.8rem;
+}
+.login-btn {
+	width: 100%;
+	padding: 0.3rem;
+	background-color: lightblue;
+}
+.login-info {
+	font-size: 0.8rem;
+	margin: 0.5rem 0;
+}
+.login-info a {
+	font-size: 1rem;
+	text-decoration: none;
+	margin-left: 0.4rem;
+}
+
+.signup-body {
+	height: 20rem;
+
+	width: 20rem;
+	border: 1px solid black;
+	margin: 4rem auto;
+	display: flex;
+	padding: 2rem;
+	flex-direction: column;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropbtn {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 1.1rem;
+}
+.name {
+	font-size: 1.3rem;
+}
+.dropdown-content {
+	display: none;
+	margin-top: 1rem;
+
+	position: absolute;
+}
+.my-details {
+	display: flex;
+	margin: 2rem;
+}
+.reference {
+	border: 1px solid black;
+}
+.reference ul {
+	list-style: none;
+}
+
+.reference ul li {
+	font-size: 1rem;
+	cursor: pointer;
+}
+.update-details {
+	margin-left: 4rem;
+}
+.update-title {
+	text-align: center;
+}
+.update-form {
+	width: 20rem;
+}
+.personal-update {
+	margin-bottom: 2rem;
+}
+.update-btn {
+	cursor: pointer;
+	background-color: blue;
+	color: white;
+	padding: 0.4rem 0.7rem;
+}
+
+.container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 2rem;
+}
+.book {
+	min-height: 20rem;
+	min-width: 5rem;
+}
+.book-title {
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 0.5rem auto;
+}
+.book-info {
+	display: flex;
+	justify-content: space-around;
+}
+.book-price {
+	font-size: 1.2rem;
+	color: red;
+	margin: 0.4rem 0;
+}
+.book-btn {
+	padding: 0.4rem 0.8rem;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+.bookdetails {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4rem;
+}
+
+.bookinformation {
+	width: 30rem;
+	margin-right: 10rem;
+}
+.booktitle {
+	font-size: 3rem;
+}
+.authordetails {
+	display: flex;
+}
+.bookgenre {
+	margin: 0.5rem 0 1.5rem 0;
+	font-size: 1rem;
+}
+.bookauthor {
+	margin: 1rem 0;
+}
+.bookdescription {
+	font-size: 1rem;
+}
+
+.selling-information {
+	margin-top: 1rem;
+}
+.book-rent {
+	padding: 0.4rem 0.6rem;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+.imgBx {
+	position: relative;
+}
+
+.book-availability {
+	margin-top: -60%;
+	position: absolute;
+	color: blue;
+}
+.cartbtn {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+.removecartbtn {
+	background-color: red;
+	color: white;
+	cursor: pointer;
+}
+.carttable {
+	width: 100%;
+}
+.takenbook {
+	color: white;
+	background-color: red;
+}
+.interestbtn {
+	cursor: pointer;
+	color:white;
+	background-color: blue;
+}
+
+.removeinterestbtn,
+.updatebook,
+.deletebook {
+	cursor: pointer;
+}
+.active-link a{
+	color:red;
+}
+.book-pages{
+	cursor: pointer;
+}
+.page-number{
+width:100%;
+}
+.page-list{
+
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	text-align: center;
+}
+html {
+	overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+	  width: 0px;
+	  background: transparent; 
+  }
+
+  .updatebook{
+color:white;
+background-color: green;
+padding: 6px 15px;
+border-radius: 10px;
+  }
+  .deletebook{
+	  color:white;
+	  background-color: red;
+	  padding: 6px 15px;
+	  border-radius: 10px;
+  }
+  .book-title{
+	 min-height: 3rem;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+  }
+
+
+
+  
+.alert {
+	position: fixed;
+	top: 0;
+	left: 50%;
+
+	transform: translateX(-50%);
+	z-index: 9999;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 1.6rem 10rem;
+	
+	box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  .alert--success {
+	background-color: #20bf6b;
+  }
+  .alert--error {
+	background-color: #eb4d4b;
+  }
+
+  .btn{
+	  padding:6px 15px;
+	  border-radius: 10px;
+  }
+  .book {
+    min-height: 20rem;
+    min-width: 5rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+	
+}
+
+header {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-top: 10px;
+    /* border-bottom: 1px solid black; */
+    background-color: #e9ecef;
+}
+
+.navcartbtn{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.navcartbtn:hover{
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    background-color: #f1f1f1;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropbtn:hover {
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+    
+}
+
+.dropdown-content{
+	width:10rem;
+	  background-color: #e9ecef;
+	  z-index:9999;
+	  text-align: center;
+}
+th,
+td {
+    border: 1px solid;
+}
+
+.booktable{
+	width:80%;
+	margin:1rem auto;
+	
+}
+.booktable tr th{
+	height: 2.5rem;
+	font-size: 1.3rem;
+}
+
+.booktable tr td{
+	font-size: 1rem;
+	text-align: center;
+}
+.booktabletitle{
+	text-align: center;
+	margin:2rem auto;
+	font-size: 2rem;
+}
+.usercontainer{
+	margin:1rem 2rem;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	
+}
+.user{
+	height: 150px;
+	width: 270px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #e9ecef;
+	position: relative;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.userinformationtitle{
+	text-align: center;
+	margin:2rem auto;
+	font-size: 2rem;
+}
+.userdata{
+	margin-bottom:5px;
+}
+
+.userpass{
+	margin-top:5px;
+	padding:6px 15px;
+	border-radius:10px;
+	color:white;
+	background-color: green;
+	cursor: pointer;
+
+}
+.cartbookinformation{
+position: relative;
+height: 10rem;
+}
+.cartbook{
+position: absolute;
+}
+.empty-page{
+	color:red;
+	margin:4rem 2rem;
+	text-align: center;
+}
+.bookpayment,.librarypass{
+color:white;
+background-color: green;
+cursor: pointer;
+}
+.takenbooks{
+	width:80%;
+	margin:1rem auto;
+	display: flex;
+	justify-content: space-around;
+}
+.booksinfo{
+	text-align: center;
+	margin:2rem 0;
+	font-size: 1.5rem;
+}
+.circle{
+	height:8px;
+	width:8px;
+	border-radius: 50%;
+	background-color:red;
+	display: inline-block;
+}
+.removeinterest{
+	color:white;
+	background-color: red;
+	cursor: pointer;
+}
+.update-details{
+    min-height: 20rem;
+    min-width: 7rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    /* margin-left: 10px; */
+}
+.reference{
+	min-height: 20rem;
+    min-width: 8rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    background-color: transparent;
+}
+
+.my-details {
+    display: flex;
+	
+    margin: 2rem auto;
+    justify-content: center;
+	
+}
+.login-body {
+    height: 14rem;
+    width: 20rem;
+    margin: 4rem auto;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    min-height: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.signup-body {
+    height: 18rem;
+
+    width: 20rem;
+    margin: 4rem auto;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+.signupbtn{
+	margin-top:5px;
+}
+.detailpass{
+	margin-top:1rem;
+}
+.bookdue{
+	font-size: 1rem;
+}
+.messagelist{
+	list-style: none;
+}
+.book-availability{
+	background-color: black;
+	width:100%;
+}

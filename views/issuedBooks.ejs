@@ -1,0 +1,35 @@
+<%- include('header') %>
+
+<% if(user.issuedBooks.length==0){ %>
+	<h1 class="empty-page">You Don't have IssuedBooks.!!!</h1>
+	<% }else{ %>
+		<h1 class="booksinfo">Issued Books</h1>
+        <div class="container">
+            <% books.forEach((book,index)=> { %>
+			<div class="book">
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
+					<% if(book.NoofBooks===0){ %>
+					<div class="book-availability"><h1>Not Available</h1></div>
+				<% }  %>
+				</a></div>
+			
+				<div class="book-title"><%= book.name %></div>
+				<div class="book-info">
+					
+					<div class="book-price">Rs. <%= book.price%></div>
+				
+				<div class="bookdue">Due on <%= times[index] %></div>
+						
+				</div>
+				
+			
+			
+			</div>
+		
+         
+			<% }) %>
+		</div>
+<% } %>
+			
+		<%- include('footer') %>

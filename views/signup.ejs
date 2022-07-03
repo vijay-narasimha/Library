@@ -1,0 +1,51 @@
+<%- include('header') %>
+
+<div class="signup-body">
+	<h1 class="login-title">Registration Form</h1>
+
+	<div class="signup-form form">
+		<form class="signupform">
+			<div class="signup">
+				<input
+					type="text"
+					id="name"
+					placeholder="Enter Username"
+					required
+					autocomplete="off"
+				/>
+				<input
+					type="text"
+					id="email"
+					placeholder="Enter Email"
+					required
+					autocomplete="off"
+				/>
+				<input
+					type="text"
+					id="phonenumber"
+					placeholder="Enter phonenumber"
+					required
+					autocomplete="off"
+				/>
+				<input
+					type="text"
+					id="password"
+					placeholder="Enter Password"
+					required
+					autocomplete="off"
+				/>
+				<input
+					type="text"
+					id="passwordconfirm"
+					placeholder="Enter password again"
+					required
+					autocomplete="off"
+				/>
+
+				<button class="login-btn signupbtn">Sign Up</button>
+			</div>
+		</form>
+		<p class="login-info">Already have an Account?<a href="login">Login</a></p>
+	</div>
+</div>
+<%- include('footer') %>

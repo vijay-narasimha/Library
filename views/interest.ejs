@@ -1,0 +1,40 @@
+<%- include('header') %>
+<% if(user.interestedBooks.length==1){ %>
+	<h1 class="empty-page">You Don't have any Interested Books.!!!</h1>
+
+	<% }else{ %>
+		<h1 class="booksinfo">Interested  Books</h1>
+<%= user.interestedBooks.length %>
+        <div class="container">
+            <% books.forEach((book,index)=> { %>
+			<div class="book">
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> >
+					<% if(book.NoofBooks===0){ %>
+					<div class="book-availability"><h1>Not Available</h1></div>
+				<% }  %>
+				</a></div>
+			
+				<div class="book-title"><%= book.name %></div>
+				<div class="book-info">
+					
+					<div class="book-price">Rs. <%= book.price%></div>
+
+                    <button   
+                    class="removeinterest btn" data-bookId=<%= book._id %>
+                    >Remove</button>
+				
+				
+						
+				</div>
+				
+			
+			
+			</div>
+		
+         
+			<% }) %>
+		</div>
+<% } %>
+			
+		<%- include('footer') %>

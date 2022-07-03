@@ -1,0 +1,26 @@
+<%- include('header') %>
+<% if(user.returnedBooks.length==0){ %>
+	<h1 class="empty-page">You Didn't return any Books.!!!</h1>
+	<% }else{ %>
+
+<h1 class="booksinfo">Returned  Books</h1>
+
+		<div class="container">
+            <% books.forEach((book,index)=> { %>
+			<div class="book">
+				
+				<div class="imgBx"><a href=book/<%= book.slug %> > <img  width="250" height="300" src=<%= book.image%> > </a> </div>
+				<div class="book-title"><%= book.name %></div>
+				<div class="book-info">
+					<div class="book-price">Rs. <%= book.price%></div>
+				
+				<div class="bookreturneddate"><h2>Returned on <%= times[index] %></h2></div>
+				
+			</div>
+           
+			</div>
+			<% })%>
+			</div>
+
+			<% } %>
+			<%- include('footer') %>
