@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "nodemon server.js"
 	},
 	"author": "",
 	"license": "ISC",
@@ -23,6 +23,6 @@
 		"stripe": "^9.6.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.16"
+		"nodemon": "^2.0.21"
 	}
 }
